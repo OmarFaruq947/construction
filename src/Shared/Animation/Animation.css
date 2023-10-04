@@ -1,0 +1,76 @@
+/* img animation 1 */
+
+.rightToLeft1 {
+  animation-name: rightToLeft1;
+  animation-duration: 20s;
+  /* animation-delay: 15s; */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: rightToLeft 4.5s linear infinite; */
+}
+@keyframes rightToLeft1 {
+  0% {
+    transform: translateX(1280px);
+    overflow: auto;
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+/* img animation 3 */
+.rightToLeft2 {
+  animation-name: rightToLeft2;
+  animation-duration: 25s;
+  /* animation-delay: 10s; */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: rightToLeft 4.5s linear infinite; */
+}
+@keyframes rightToLeft2 {
+  0% {
+    transform: translateX(1280px);
+    overflow: auto;
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+/* img animation 2 */
+.leftToRight1 {
+  animation-name: leftToRight1;
+  animation-duration: 30s;
+  animation-direction: normal, reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-delay: 20s; */
+}
+@keyframes leftToRight1 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translateX(calc(1200px + 150px));
+  }
+}
+
+/* img animation 4 */
+.leftToRight2 {
+  animation-name: leftToRight2;
+  animation-duration: 50s;
+  /* animation-delay: 10s; */
+  animation-direction: normal, reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes leftToRight2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  90%,
+  100% {
+    transform: translateX(calc(1200px + 150px));
+  }
+}

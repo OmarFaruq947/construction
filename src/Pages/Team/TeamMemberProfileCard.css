@@ -1,0 +1,40 @@
+.container {
+  width: 300px;
+  margin: 3em auto;
+}
+.panel {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  border-radius: 3px;
+}
+.panel .panel-inner {
+  transition: all 0.45s;
+}
+.panel .panel-inner:after {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(transparent, white);
+  pointer-events: none;
+  opacity: 1;
+}
+.panel .panel-inner:hover {
+  transform: translateY(-70px);
+}
+.panel .panel-inner:hover:after {
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.panel .panel-body {
+  opacity: 1;
+  padding: 1.5em;
+  max-height: 140px;
+}
+.panel .panel-body > p {
+  margin: 0;
+}

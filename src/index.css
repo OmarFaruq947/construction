@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Signika Negative", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+.animationBg {
+  background-image: url("./assets/animationBackground/city-skiline.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  overflow-x: none !important;
+}
+
+/* state(home page) */
+.stateBg {
+  background-image: url("./assets/stateBackground/light-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  overflow-x: none !important;
+}
