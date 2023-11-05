@@ -1,9 +1,3 @@
-# Frontend Development for a Dynamic Platform
-
-## Introduction
-
-Welcome to the Frontend Development assignment with a strong emphasis on responsive design for a dynamic platform! In this project, your primary goal is to create the user interface (UI) and frontend functionality for a versatile platform that accommodates various types of content or services. An essential aspect of this assignment is to ensure that the platform is responsive, providing an optimal user experience across various devices and screen sizes.
-
 ## Assignment Requirements
 
 - **From the if applicable list, you must do minimum 10 among of them.**
@@ -16,14 +10,14 @@ Welcome to the Frontend Development assignment with a strong emphasis on respons
 
 **Home page content:**
 
-- Navigation Menu
+- Navigation Menu --------(ok)
 - Search Bar
-- Featured Content/Services
-- Testimonials/Reviews
-- About Us/Platform Description
-- Images and Visuals
-- Detailed Footer menu
-- Two unique sections
+- Featured Content/Services -------(ok)
+- Testimonials/Reviews --------------(ok)
+- About Us/Platform Description ----(ok)
+- Images and Visuals -------(ok)
+- Detailed Footer menu -----(ok)
+- Two unique sections ------(ok)
 
 I**nteractivity (minimum 2 section):**
 
@@ -206,3 +200,9 @@ Your final submission should include the following:
 [Chrome Web Store](https://chromewebstore.google.com/search/screen%20recorder) or https://chromewebstore.google.com/detail/loom-%E2%80%93-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb )
 
 [ Note: Must submit your complete website. Incomplete assignments will not be accepted. ]
+
+```
+Link
+```
+
+![Alt text](home.png)
