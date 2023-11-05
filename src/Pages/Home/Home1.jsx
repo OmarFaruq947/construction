@@ -1,4 +1,6 @@
 import React from "react";
+import MissionAndVision from "../MissionAndVision/MissionAndVision";
+import Testimonial from "../Testimonial/Testimonial";
 import Achievements from "./Achievements/Achievements";
 import Info from "./Info";
 import OurClients from "./OurClients/OurClients";
@@ -10,9 +12,11 @@ const Home1 = () => {
   return (
     <>
       <BannerSlider />
+      <MissionAndVision />
       <OurServices />
       <Achievements />
       <States />
+      <Testimonial />
       <Info />
       <OurClients />
     </>

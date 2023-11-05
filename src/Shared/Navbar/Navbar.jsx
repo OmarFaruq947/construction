@@ -15,7 +15,7 @@ const Navbar = () => {
 
   // for home
   const toggleHomeDropdown = () => setHomeDropdownOpen(!homeDropdownOpen);
-  const homeDropdownClose = () => setHomeDropdownOpen(false);
+
 
   //for pages
   const togglePagesDropdown = () => setPagesDropdownOpen(!pagesDropdownOpen);
@@ -40,40 +40,15 @@ const Navbar = () => {
       <li
         className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-400"
         onMouseEnter={toggleHomeDropdown}
-        onMouseLeave={homeDropdownClose}
+        
         onClick={toggleHomeDropdown}
       >
         <Link
-          onClick={homeDropdownClose}
+         
           className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
           <span>Home</span>
         </Link>
-
-        {homeDropdownOpen && (
-          <ul className="dropdown-menu  rounded-b-lg w-32 pt-1 absolute top-auto bg-white block z-50 duration-300 group-hover:translate-y-1 ease-in-out ">
-            <li className="py-1/2 mb-[1px] hover:bg-secondary duration-300 bg-brand py-2 text-secondary hover:text-brand">
-              <Link
-                onClick={isMenuOpen}
-                title="Home1"
-                to="/"
-                className="block px-4  text-[14px] hover:translate-x-1 duration-300"
-              >
-                Home1
-              </Link>
-            </li>
-            <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="Home2"
-                to="/home2"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Home2
-              </Link>
-            </li>
-          </ul>
-        )}
       </li>
       {/* home end here */}
       <li

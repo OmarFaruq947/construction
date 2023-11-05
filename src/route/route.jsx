@@ -7,7 +7,6 @@ import Contact from "../Pages/Contact/Contact";
 import FAQ from "../Pages/Faq/FAQ";
 import History from "../Pages/History/History";
 import Home1 from "../Pages/Home/Home1";
-import Home2 from "../Pages/Home/Home2";
 import NoMatch from "../Pages/NoMatch/NoMatch";
 import Pricing from "../Pages/Pricing/Pricing";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
@@ -28,10 +27,6 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home1 />,
-      },
-      {
-        path: "/home2",
-        element: <Home2 />,
       },
       {
         path: "/servicesDetails",

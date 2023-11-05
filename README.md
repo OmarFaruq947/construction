@@ -11,7 +11,7 @@
 **Home page content:**
 
 - Navigation Menu --------(ok)
-- Search Bar
+- Search Bar -------------(ok)
 - Featured Content/Services -------(ok)
 - Testimonials/Reviews --------------(ok)
 - About Us/Platform Description ----(ok)

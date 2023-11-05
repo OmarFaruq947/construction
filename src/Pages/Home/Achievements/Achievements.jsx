@@ -55,29 +55,26 @@ const Achievements = () => {
 
   return (
     <>
-      <section className="text-accent body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20 pt-14">
-            <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1 text-center ">
-              Our Grate
-              <span className="text-brand"> Achievement</span>
-            </h2>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-textColure">
-              Construction is a general term meaning the art and science to form
-              objects systems organizations, and comes from Latin construction
-              and Old French construction. To construct is the verb: the act of
-              building, and the noun is construction.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap -m-4">
-            {data.map((infoData) => (
-              <AchievementsCard
-                key={infoData.id}
-                infoData={infoData}
-              ></AchievementsCard>
-            ))}
-          </div>
+      <section className="text-accent body-font container my-24 mx-auto">
+        <div className="flex flex-col text-center w-full my-20">
+          <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1 text-center ">
+            Our Grate
+            <span className="text-brand"> Achievement</span>
+          </h2>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-textColure">
+            Construction is a general term meaning the art and science to form
+            objects systems organizations, and comes from Latin construction and
+            Old French construction. To construct is the verb: the act of
+            building, and the noun is construction.
+          </p>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {data.map((infoData) => (
+            <AchievementsCard
+              key={infoData.id}
+              infoData={infoData}
+            ></AchievementsCard>
+          ))}
         </div>
       </section>
     </>

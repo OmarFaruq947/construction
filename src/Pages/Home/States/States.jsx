@@ -32,7 +32,7 @@ const States = () => {
 
   return (
     <>
-      <div className="flex flex-col text-center w-full  pt-14">
+      <div className="flex flex-col text-center w-full my-14">
         <h2 className="text-secondary font-bold text-5xl uppercase relative h-auto w-full pb-1 text-center ">
           Delivering The Most Innovation
           <span className="text-brand"> Goals.</span>

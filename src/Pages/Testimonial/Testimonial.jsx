@@ -49,16 +49,16 @@ const Testimonial = () => {
     <>
       <section className="text-text body-font">
         <div className="px-0 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20 pt-14">
+         
             <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1 text-center ">
               Grate
               <span className="text-brand"> Testimonial</span>
             </h2>
-          </div>
+        
 
           <div className="flex flex-wrap ">
             <Carousel
-              className="bg-[#F4F4F4]"
+              
               plugins={[
                 "centered",
                 "infinite",
@@ -66,7 +66,7 @@ const Testimonial = () => {
                   resolve: autoplayPlugin,
 
                   options: {
-                    interval: 3000,
+                    interval: 2000,
                     // numberOfSlides: 4,
                   },
                 },
