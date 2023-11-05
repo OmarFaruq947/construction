@@ -2,6 +2,7 @@ import React from "react";
 import whiteLogo from "../../assets/logo/whiteLogo.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-[#2F2F30] pb-16">
@@ -170,6 +171,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className="pb-0 pt-14 text-xs  text-brand bg-[#2F2F30] text-center">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/md-omar-faruq-7458b819a/"
+        >
+          © {currentYear} Omar Faruq
+        </a>
+      </p>
       </footer>
     </>
   );

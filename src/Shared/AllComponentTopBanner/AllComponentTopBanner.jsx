@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AllComponentTopBanner = ({ bannerContent }) => {
-  const { banner, heading, afterPage, beforePage, banner_imag } = bannerContent;
+  
+  const {banner, heading, afterPage, beforePage, banner_imag } = bannerContent
+
   return (
     <>
       <div class="relative">

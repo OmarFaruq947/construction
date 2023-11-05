@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import colorLogo from "../../assets/logo/colorLogo.png";
+
 import Modal from "./Modal";
 import "./Navbar.css";
 

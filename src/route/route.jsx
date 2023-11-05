@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-
 import Main from "../Layout/Main";
 import BlogDetails from "../Pages/Blog/BlogDetails";
 import BlogGrid from "../Pages/Blog/BlogGrid";
@@ -17,6 +16,8 @@ import ServicesDetails from "../Pages/Services/ServicesDetails";
 import Shop from "../Pages/Shop/Shop";
 import ShopDetails from "../Pages/Shop/ShopDetails";
 import Team from "../Pages/Team/Team";
+
+
 
 export const router = createBrowserRouter([
   {

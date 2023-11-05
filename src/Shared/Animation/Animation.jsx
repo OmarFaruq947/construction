@@ -6,6 +6,7 @@ import rightTractor2 from "../../assets/construction tractor icon/RTL2.png";
 import "./Animation.css";
 
 const Animation = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div className="relative w-full  animationBg bg-[#2F2F30] border-b border-gray-800">
@@ -17,19 +18,19 @@ const Animation = () => {
 
         <img
           src={leftTractor1}
-          alt=""
+          alt="..."
           className="w-20 leftToRight1 absolute top-0"
         />
 
         <img
           src={rightTractor2}
-          alt=""
+          alt="..."
           className="w-20 rightToLeft2 absolute top-0"
         />
 
         <img
           src={leftTractor2}
-          alt=""
+          alt="..."
           className="w-20 leftToRight2 absolute top-[-5px]"
         />
       </div>
@@ -38,7 +39,7 @@ const Animation = () => {
           target="_blank"
           href="https://www.linkedin.com/in/md-omar-faruq-7458b819a/"
         >
-          © 2022 Weero Digital
+          © {currentYear} Weero Digital
         </a>
       </p>
     </>

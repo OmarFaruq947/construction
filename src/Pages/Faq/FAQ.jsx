@@ -12,8 +12,7 @@ const FAQ = () => {
   let [show2, setShow2] = useState(false);
   let [show3, setShow3] = useState(false);
 
-  // const heading = `The quick, brown fox ${(<br class="hidden md:block" />)}
-  // jumps over a`;
+
 
   const bannerContent = {
     heading: "faq",
