@@ -21,11 +21,11 @@
 
 I**nteractivity (minimum 2 section):**
 
-1. Smooth Scrolling
-2. Testimonials/Reviews Carousel
+1. Smooth Scrolling ------(ok)
+2. Testimonials/Reviews Carousel -----(ok)
 3. About Us/Platform Description Reveal ( On mouse hover or click show animated card or detailed view)
-4. Scroll-to-Top Button
-5. Loading Spinner
+4. Scroll-to-Top Button ------ (ok)
+5. Loading Spinner ----------(ok)
 
 ### Content or Service Listings
 

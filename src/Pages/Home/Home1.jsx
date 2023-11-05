@@ -9,6 +9,7 @@ import BannerSlider from "./Slider/BannerSlider";
 import States from "./States/States";
 
 const Home1 = () => {
+ 
   return (
     <>
       <BannerSlider />

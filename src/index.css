@@ -30,3 +30,18 @@ body {
   background-position: bottom;
   overflow-x: none !important;
 }
+/* Scroll bar CSS style section start*/
+/* fixed part */
+::-webkit-scrollbar {
+  background-color: white;
+  height: 9px;
+  border: 1px solid white;
+  width: 10px;
+}
+
+/* moving part */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fcd900;
+}
+/* Scroll bar CSS style section end*/
