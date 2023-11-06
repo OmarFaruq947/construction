@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import { useParams } from "react-router-dom";
 import blogImage from "../../assets/blogpic/pic2.jpg";
+import BTN from "../../components/button/BTN";
 
 const ServiceMoreDetails = () => {
   const { id } = useParams();
@@ -9,30 +10,15 @@ const ServiceMoreDetails = () => {
   return (
     <>
       <p>{id}</p>
-      <div className="max-w-screen-lg mx-auto border border-gray-100 mb-20">
+      <div className="mt-5 max-w-screen-lg mx-auto border border-gray-100 mb-20">
           <div className=" px-6 py-6 space-y-3">
             {/* blog image`` */}
             <div>
               <img src={blogImage} alt="" className="w-full h-80" />
             </div>
             {/* Some minor details about blog`` */}
-            <div className="flex md:space-x-4 w-full">
-            
-              <div className="hidden md:block">
-                <p className="flex items-center justify-between">
-                  <Icon className="text-brand md:mr-2" icon="ph:factory" />
-                  Factory
-                </p>
-              </div>
-              <div>
-                <p className="flex items-center justify-between ">
-                  <Icon
-                    className="text-brand md:mr-2"
-                    icon="ic:baseline-person"
-                  />
-                  posted by admin
-                </p>
-              </div>
+            <div className="flex md:space-x-4 w-full justify-between">
+             
               <div>
                 <p className="flex items-center justify-between ">
                   <Icon
@@ -42,6 +28,15 @@ const ServiceMoreDetails = () => {
                   December 11, 2022
                 </p>
               </div>
+            
+
+
+              <div className="space-x-4">
+             <BTN innerText="Pricing Info" link='/pricing'/>
+             <BTN innerText="Booking Now"/>
+              </div>
+
+              
             </div>
             {/* blog full details`` */}
             <div>

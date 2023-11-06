@@ -45,7 +45,7 @@ I**nteractivity (minimum 2 section):**
 - Search Results Summary ---- (not necessary)
 
 - Service Details Link ------(ok)
-- Rating and Reviews --------(pending)****\*****
+- Rating and Reviews --------(ok)
 - Service Cards ----- (ok)
 - Breadcrumb Navigation ----- (pending)
 - Service Tags ------ (ok)

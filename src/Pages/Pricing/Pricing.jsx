@@ -114,8 +114,8 @@ const Pricing = () => {
                 <div className="flex items-center p-8  uppercase">
                   <button
                     className="mt-3 text-lg font-semibold 
-	bg-primary w-full text-white rounded-sm 
-	px-6 py-3 block shadow-sm bg-brand hover:bg-secondary"
+	  w-full text-white rounded-sm 
+	px-6 py-3 block shadow-sm bg-brand  hover:bg-secondary    duration-300"
                   >
                     Select
                   </button>
@@ -202,8 +202,8 @@ const Pricing = () => {
               <div className="flex items-center p-8  uppercase">
                 <button
                   className="mt-3 text-lg font-semibold 
-                  bg-primary w-full text-white rounded-sm 
-                  px-6 py-3 block shadow-sm bg-brand hover:bg-secondary"
+                    w-full text-white rounded-sm 
+                  px-6 py-3 block shadow-sm bg-brand  hover:bg-secondary    duration-300"
                 >
                   Select
                 </button>
@@ -290,9 +290,9 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-center p-8  uppercase">
                   <button
-                    className="mt-3 text-lg font-semibold 
-                    bg-primary w-full text-white rounded-sm 
-                    px-6 py-3 block shadow-sm bg-brand hover:bg-secondary"
+                    className="mt-3 font-semibold 
+                      w-full text-white 
+                    px-6 py-3 bg-brand hover:bg-secondary duration-300"
                   >
                     Select
                   </button>
