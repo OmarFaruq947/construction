@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import { useParams } from "react-router-dom";
 import blogImage from "../../assets/blogpic/pic2.jpg";
+import RatingStar from "../../components/Rating/RatingStar";
 import BTN from "../../components/button/BTN";
 
 const ServiceMoreDetails = () => {
@@ -27,13 +28,15 @@ const ServiceMoreDetails = () => {
                   />
                   December 11, 2022
                 </p>
+                <RatingStar rating={4}/>
               </div>
+              
             
 
 
               <div className="space-x-4">
              <BTN innerText="Pricing Info" link='/pricing'/>
-             <BTN innerText="Booking Now"/>
+             <BTN innerText="Booking Now" link='/booking'/>
               </div>
 
               
@@ -41,7 +44,7 @@ const ServiceMoreDetails = () => {
             {/* blog full details`` */}
             <div>
               <h1 className="text-4xl text-secondary font-semibold">
-                Blog Title Here
+                Service details Title Here
               </h1>
             </div>
             <hr />

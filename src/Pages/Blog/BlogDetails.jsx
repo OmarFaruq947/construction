@@ -6,9 +6,9 @@ import bannerImg from "../../assets/Banner/BannerPicture/bannerPic4.png";
 import banner from "../../assets/Banner/pic1.jpg";
 import blogImage from "../../assets/blogpic/pic2.jpg";
 import {
-  default as blogImage2,
-  default as blogImage3,
-  default as blogImage4,
+    default as blogImage2,
+    default as blogImage3,
+    default as blogImage4,
 } from "../../assets/blogpic/pic4.jpg";
 
 const BlogDetails = () => {
@@ -238,7 +238,7 @@ const BlogDetails = () => {
             <div className="grid rounded  sm:p-8 relative mt-7">
               <div className="mx-auto mt-1 w-full text-center rounded-md lg:text-left">
                 <div>
-                  <div class="relative">
+                  <div className="relative">
                     <input
                       type="text"
                       class="w-full text-gray-900 bg-slate-100 p-4 pe-12 text-xs shadow-sm"

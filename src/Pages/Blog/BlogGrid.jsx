@@ -187,7 +187,7 @@ const BlogGrid = () => {
           <div className="grid rounded  sm:p-8 relative mt-7">
             <div className="mx-auto mt-1 w-full text-center rounded-md lg:text-left">
               <div>
-                <div class="relative">
+                <div className="relative">
                   <input
                     type="text"
                     class="w-full text-gray-900 bg-slate-100 p-4 pe-12 text-xs shadow-sm"

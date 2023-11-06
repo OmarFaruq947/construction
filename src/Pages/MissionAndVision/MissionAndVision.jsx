@@ -4,10 +4,10 @@ import missionVisionImag from "../../assets/ACHIEVEMENT_Pic/achievementPic4.jpg"
 const MissionAndVision = () => {
   return (
     <>
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="grid gap-12 row-gap-8 lg:grid-cols-2">
-          <div class="flex flex-col justify-center">
-            <div class="max-w-xl mb-6">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
+          <div className="flex flex-col justify-center">
+            <div className="max-w-xl mb-6">
               <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1">
                 We're Building Everything Best That You
                 <span className="text-brand"> Needed!</span>
@@ -19,10 +19,10 @@ const MissionAndVision = () => {
                 verb: the act of building, and the noun is construction.
               </p>
             </div>
-            <div class="grid gap-8 row-gap-8 sm:grid-cols-2">
+            <div className="grid gap-8 row-gap-8 sm:grid-cols-2">
 
               <Link to="/mission">
-                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
+                <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="1024"
@@ -46,7 +46,7 @@ const MissionAndVision = () => {
               </Link>
 
               <Link to="/vision">
-                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
+                <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="1024"

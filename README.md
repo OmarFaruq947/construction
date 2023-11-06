@@ -49,7 +49,7 @@ I**nteractivity (minimum 2 section):**
 - Service Cards ----- (ok)
 - Breadcrumb Navigation ----- (pending)
 - Service Tags ------ (ok)
-- Pricing Information --------(pending)
+- Pricing Information --------(ok)
 
 ### Detail Pages
 
@@ -57,14 +57,14 @@ I**nteractivity (minimum 2 section):**
 
 **Detail page:**
 
-- Title ---------()
-- Description -----()
+- Title ---------(ok)
+- Description -----(ok)
 - Images or Gallery ()
-- Pricing (if applicable) ----()
+- Pricing (if applicable) ----(ok)
 - Location or Address (if relevant) ----()
 - Contact Information (if applicable) ----()
-- User Reviews and Ratings(if applicable) -----()
-- Booking or Reservation Options------()
+- Ratings(if applicable) -----(ok)
+- Booking or Reservation Options------(ok)
 
 - Availability Information (if applicable)
 - Related Content/Services
@@ -79,11 +79,12 @@ I**nteractivity (minimum 2 section):**
 
 **Interaction Page:**
 
-- Booking Form ----()
-- User Details and Contact Information----()
-- Cancellation Policy-----()
-- Review and Edit Booking (if needed) ------()
+- Booking Form ----(ok)
+- User Details and Contact Information----(ok)
+  -name, email, phone, altPhone, present_address, WorkingSite_address, NID_number, Additional Information
+- Cancellation Policy-----()****\*\*****
 
+- Review and Edit Booking (if needed)
 - Date and Time Selection (if applicable)
 - Availability Calendar (if applicable)
 - Pricing Information (if applicable)

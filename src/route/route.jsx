@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import BlogDetails from "../Pages/Blog/BlogDetails";
 import BlogGrid from "../Pages/Blog/BlogGrid";
 import BlogRegular from "../Pages/Blog/BlogRegular";
+import Booking from "../Pages/Booking/Booking";
 import Contact from "../Pages/Contact/Contact";
 import FAQ from "../Pages/Faq/FAQ";
 import History from "../Pages/History/History";
@@ -90,6 +91,10 @@ export const router = createBrowserRouter([
       {
         path:"/vision",
         element: <Vision />
+      },
+      {
+        path:"/booking",
+        element: <Booking />
       },
       {
         path:"/service-more-details/:id",

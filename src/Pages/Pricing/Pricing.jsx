@@ -17,7 +17,7 @@ const Pricing = () => {
   return (
     <>
       <AllComponentTopBanner bannerContent={bannerContent} />
-      <div className="container max-w-full mx-auto py-24 px-6 bg-backgroundColor">
+      <div className="container max-w-full mx-auto bg-backgroundColor">
         <div className="flex flex-col text-center w-full mb-20 pt-14">
           <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1 text-center ">
             Package
@@ -31,9 +31,8 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="h-1 mx-auto bg-yellow-100 w-24 opacity-75 mt-4 rounded" />
-        <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
-          <div className="relative block flex flex-col md:flex-row items-center">
+       
+          <div className="relative flex flex-col md:flex-row items-center max-w-full md:max-w-6xl mx-auto">
             <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4 border border-brand hover:border-yellow-100">
               <div className="bg-white text-black rounded-lg shadow-lg overflow-hidden">
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-secondary px-8 lg:px-6">
@@ -300,7 +299,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
       <PricingInfo />
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">

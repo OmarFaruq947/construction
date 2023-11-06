@@ -44,9 +44,9 @@ const States = () => {
           building, and the noun is construction.
         </p>
       </div>
-      <div class="px-4 py-16 mx-auto screen-xl md:px-24  lg:py-20 stateBg  opacity-75">
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 ">
-          <div class="text-center">
+      <div className="px-4 py-16 mx-auto screen-xl md:px-24  lg:py-20 stateBg  opacity-75">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 ">
+          <div className="text-center">
             <h6 class="text-5xl font-bold text-brand" ref={countRef}>
               {isVisible && (
                 <CountUp start={100} end={3200} duration={6} ref={countRef} />
@@ -61,7 +61,7 @@ const States = () => {
               kept in mind.
             </p>
           </div>
-          <div class="text-center">
+          <div className="text-center">
             <h6 class="text-5xl font-bold text-brand">
               {isVisible && (
                 <CountUp start={100} end={3300} duration={6} ref={countRef} />
@@ -74,7 +74,7 @@ const States = () => {
               troubles, it only changes them.
             </p>
           </div>
-          <div class="text-center">
+          <div className="text-center">
             <h6 class="text-5xl font-bold text-brand">
               {isVisible && (
                 <CountUp
@@ -92,7 +92,7 @@ const States = () => {
               today, in this moment.
             </p>
           </div>
-          <div class="text-center">
+          <div className="text-center">
             <h6 class="text-5xl font-bold text-brand">
               {isVisible && (
                 <CountUp start={10} end={200} duration={6} ref={countRef} />

@@ -72,46 +72,46 @@ const Shop = () => {
         <Category3 />
       </div>
 
-      <div class="">
-        <div class="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div class="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+      <div className="">
+        <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Construction products are essential components
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 These products encompass a wide range of materials
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Cement is a vital construction product used in concrete
                 production
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Bricks and timber are traditional construction materials
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Glass is employed extensively in modern construction for windows
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Insulation materials, such as foam, mineral wool, and fiberglass
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Roofing materials, including tiles, shingles, and metal sheets
               </p>
             </div>
-            <div class="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <div className="px-10 py-20 text-center transition duration-300 transform bg-secondary  hover:bg-brand rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p class="font-semibold text-gray-200">
                 Electrical components, such as wiring, switches, and outlets
               </p>

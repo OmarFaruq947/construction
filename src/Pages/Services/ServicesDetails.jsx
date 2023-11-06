@@ -8,8 +8,8 @@ import tractor from "../../assets/exclevetor.jpg";
 import servicePic1 from "../../assets/our_services/servicePic1.jpg";
 import servicePic2 from "../../assets/our_services/servicePic2.jpg";
 import {
-  default as servicePic3,
-  default as services,
+    default as servicePic3,
+    default as services,
 } from "../../assets/our_services/servicePic3.jpg";
 import servicePic4 from "../../assets/our_services/servicePic4.jpg";
 import Architecture from "./Architecture";
@@ -133,7 +133,7 @@ const ServicesDetails = () => {
       {/* ................... */}
 
       {/* services start*/}
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col text-center w-full mb-20 pt-14">
           <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1 text-center ">
             OUR Service
@@ -146,11 +146,11 @@ const ServicesDetails = () => {
             building, and the noun is construction.
           </p>
         </div>
-        <div class="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
-          <div class="flex flex-col justify-center">
-            <div class="flex">
-              <div class="mr-4">
-                <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-brand">
+        <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+          <div className="flex flex-col justify-center">
+            <div className="flex">
+              <div className="mr-4">
+                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-brand">
                   <svg
                     class="w-8 h-8 text-deep-purple-accent-400"
                     stroke="currentColor"
@@ -179,9 +179,9 @@ const ServicesDetails = () => {
                 <hr class="w-full my-6 border-gray-300" />
               </div>
             </div>
-            <div class="flex">
-              <div class="mr-4">
-                <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-brand">
+            <div className="flex">
+              <div className="mr-4">
+                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-brand">
                   <svg
                     class="w-8 h-8 text-deep-purple-accent-400"
                     stroke="currentColor"
@@ -210,9 +210,9 @@ const ServicesDetails = () => {
                 <hr class="w-full my-6 border-gray-300" />
               </div>
             </div>
-            <div class="flex">
-              <div class="mr-4">
-                <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-brand">
+            <div className="flex">
+              <div className="mr-4">
+                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-brand">
                   <svg
                     class="w-8 h-8 text-deep-purple-accent-400"
                     stroke="currentColor"
@@ -241,7 +241,7 @@ const ServicesDetails = () => {
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 gap-5">
             <img
               class="object-cover w-full h-56 col-span-2 rounded shadow-lg"
               src={tractor}
