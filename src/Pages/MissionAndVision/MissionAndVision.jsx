@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import missionVisionImag from "../../assets/ACHIEVEMENT_Pic/achievementPic4.jpg";
 const MissionAndVision = () => {
   return (
@@ -19,7 +20,8 @@ const MissionAndVision = () => {
               </p>
             </div>
             <div class="grid gap-8 row-gap-8 sm:grid-cols-2">
-              <div>
+
+              <Link to="/mission">
                 <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -35,14 +37,15 @@ const MissionAndVision = () => {
                   </svg>
                 </div>
                 <h6 class="mb-2 text-2xl font-bold leading-5 text-secondary">
-                  Industrus Mission
+                  Industry Mission <span className="text-brand">⇾</span>
                 </h6>
                 <p class="text-sm text-textColure">
                   Construction is a general term meaning the art and science to
                   form objects systems.
                 </p>
-              </div>
-              <div>
+              </Link>
+
+              <Link to="/vision">
                 <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,13 +61,14 @@ const MissionAndVision = () => {
                   </svg>
                 </div>
                 <h6 class="mb-2 text-2xl font-bold leading-5 text-secondary">
-                  Our Vision
+                  Our Vision <span className="text-brand">⇾</span>
                 </h6>
                 <p class="text-sm text-textColure">
                   Construction is a general term meaning the art and science to
                   form objects systems.
                 </p>
-              </div>
+              </Link>
+
             </div>
           </div>
 

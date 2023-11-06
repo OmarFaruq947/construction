@@ -7,6 +7,8 @@ import Contact from "../Pages/Contact/Contact";
 import FAQ from "../Pages/Faq/FAQ";
 import History from "../Pages/History/History";
 import Home1 from "../Pages/Home/Home1";
+import Mission from "../Pages/MissionAndVision/Mission";
+import Vision from "../Pages/MissionAndVision/Vision";
 import NoMatch from "../Pages/NoMatch/NoMatch";
 import Pricing from "../Pages/Pricing/Pricing";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
@@ -80,6 +82,14 @@ export const router = createBrowserRouter([
         path: "/registration",
         element: <Registration />,
       },
+      {
+        path:"/mission",
+        element: <Mission />
+      },
+      {
+        path:"/vision",
+        element: <Vision />
+      }
     ],
   },
 ]);
