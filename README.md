@@ -23,31 +23,33 @@ I**nteractivity (minimum 2 section):**
 
 1. Smooth Scrolling ------(ok)
 2. Testimonials/Reviews Carousel -----(ok)
-3. About Us/Platform Description Reveal ( On mouse hover or click show animated card or detailed view)
-4. Scroll-to-Top Button ------ (ok)
-5. Loading Spinner ----------(ok)
+3. Scroll-to-Top Button ------ (ok)
+4. Loading Spinner ----------(ok)
+
+5. About Us/Platform Description Reveal ( On mouse hover or click show animated card or detailed view)
 
 ### Content or Service Listings
 
-- Create a dedicated page where users can explore content or services with a focus on responsive design. Implement filters and sorting options that work well on both large screens and mobile devices. ----(incomplete)
+- Create a dedicated page where users can explore content or services with a focus on responsive design. Implement filters and sorting options that work well on both large screens and mobile devices. ----(ok)
 
 **Content or Service listing page:**
 
-- Content/Service Cards
-- Filter and Sorting Options
-- Search Bar
-- Pagination (frontend pagination)
-- Content/Service Details Link
-- Quick Actions
-- Rating and Reviews
-- Availability Status ( if applicable)
-- Sorting and Filtering Sidebar
-- Breadcrumb Navigation
-- Advanced Filters (optional)
-- Content/Service Tags
-- Pricing Information
-- User-generated Content
-- Search Results Summary
+- Filter and Sorting Options ---- (not necessary)
+- Search Bar ---- (not necessary)
+- Pagination (frontend pagination) ---- (not necessary)
+- Quick Actions ---- (not necessary)
+- Availability Status ( if applicable) ---- (not necessary)
+- Sorting and Filtering Sidebar ---- (not necessary)
+- Advanced Filters (optional) ---- (not necessary)
+- User-generated Content ---- (not necessary)
+- Search Results Summary ---- (not necessary)
+
+- Service Details Link ------(ok)
+- Rating and Reviews --------(pending)****\*****
+- Service Cards ----- (ok)
+- Breadcrumb Navigation ----- (pending)
+- Service Tags ------ (ok)
+- Pricing Information --------(pending)
 
 ### Detail Pages
 
@@ -55,16 +57,17 @@ I**nteractivity (minimum 2 section):**
 
 **Detail page:**
 
-- Title
-- Description
-- Images or Gallery
-- Pricing (if applicable)
+- Title ---------()
+- Description -----()
+- Images or Gallery ()
+- Pricing (if applicable) ----()
+- Location or Address (if relevant) ----()
+- Contact Information (if applicable) ----()
+- User Reviews and Ratings(if applicable) -----()
+- Booking or Reservation Options------()
+
 - Availability Information (if applicable)
-- Location or Address (if relevant)
-- Contact Information (if applicable)
-- User Reviews and Ratings(if applicable)
 - Related Content/Services
-- Booking or Reservation Options
 - Share Buttons
 - Call-to-Action Buttons
 - Additional Details
@@ -76,33 +79,34 @@ I**nteractivity (minimum 2 section):**
 
 **Interaction Page:**
 
-- Booking Form
+- Booking Form ----()
+- User Details and Contact Information----()
+- Cancellation Policy-----()
+- Review and Edit Booking (if needed) ------()
+
 - Date and Time Selection (if applicable)
 - Availability Calendar (if applicable)
 - Pricing Information (if applicable)
 - Booking Confirmation (if applicable)
-- User Details and Contact Information
 - Payment Options (if applicable)
-- Cancellation Policy
 - Add to Cart or Reserve Now Button
 - Availability Status (if applicable)
 - Additional Options
-- Review and Edit Booking (if needed)
 
 ### User Registration and Login
 
-- Design registration and login forms that are user-friendly and work smoothly on mobile devices. Ensure that error messages and validation are clear on smaller screens.
+- Design registration and login forms that are user-friendly and work smoothly on mobile devices. Ensure that error messages and validation are clear on smaller screens. -----(ok)
 
 **User Registration & Login page:**
 
-- Registration Form
-- Login Form
+- Registration Form -----(ok)
+- Login Form ------(ok)
 - User Profile Picture (if applicable)
-- Username or Email Field
-- Password Field
+- Username or Email Field ---(ok)
+- Password Field ----(ok)
 - Social Media Login Options (if applicable)
-- Sign-Up Button
-- Sign-In Button
+- Sign-Up Button ---(ok)
+- Sign-In Button ---(ok)
 - Error Messages for Validation
 - Terms and Conditions Checkbox
 - Privacy Policy Link

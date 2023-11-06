@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo/colorLogo.png";
+import Login from "./Login";
 const Registration = () => {
   return (
     <>
@@ -49,7 +50,7 @@ const Registration = () => {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="e-mail address"
+                placeholder="e-mail"
                 autoComplete="email"
                 className="block w-full py-3 px-1 mt-2 
               text-brand appearance-none 
@@ -63,7 +64,7 @@ const Registration = () => {
                 htmlFor="phone"
                 className="block text-xs font-semibold text-secondary uppercase"
               >
-                E-mail
+                Phone Number
               </label>
               <input
                 id="phone"
@@ -80,17 +81,17 @@ const Registration = () => {
 
               {/* country Input */}
               <label
-                htmlFor="country"
+                htmlFor="district"
                 className="block text-xs font-semibold text-secondary uppercase"
               >
-                E-mail
+                District Name
               </label>
               <input
-                id="country"
+                id="district"
                 type="text"
-                name="country"
-                placeholder="country"
-                autoComplete="country"
+                name="district"
+                placeholder="district"
+                autoComplete="district"
                 className="block w-full py-3 px-1 mt-2 
               text-brand appearance-none 
               border-b-2 border-gray-100
@@ -111,6 +112,8 @@ const Registration = () => {
           </div>
         </div>
       </div>
+
+      <Login />
     </>
   );
 };

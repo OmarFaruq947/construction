@@ -23,6 +23,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: servicePic1,
+      rating:4
     },
     {
       id: 2,
@@ -31,6 +32,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: servicePic2,
+      rating:5
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: servicePic3,
+      rating:4
     },
     {
       id: 4,
@@ -45,6 +48,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: servicePic4,
+      rating:5
     },
     {
       id: 5,
@@ -52,6 +56,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: card5,
+      rating:5
     },
     {
       id: 6,
@@ -59,6 +64,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: card2,
+      rating:3
     },
     {
       id: 7,
@@ -66,6 +72,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: servicePic1,
+      rating:4
     },
     {
       id: 8,
@@ -73,6 +80,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: card3,
+      rating:5
     },
     {
       id: 9,
@@ -80,6 +88,7 @@ const ServicesDetails = () => {
       description:
         "Sed stet rebum magna no sed, labore dolore ipsum diam ea aliquyam vero. Sanctus invidunt justo eirmod eos diam.",
       img: card2,
+      rating:4
     },
   ];
   return (
@@ -112,8 +121,8 @@ const ServicesDetails = () => {
           </p>
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-            {data.map((infoCard) => (
-              <ServiceInfoCard key={infoCard.id} infoCard={infoCard} />
+            {data.map((serviceInfo) => (
+              <ServiceInfoCard key={serviceInfo.id} serviceInfo={serviceInfo} />
             ))}
           </div>
         </div>
