@@ -13,6 +13,7 @@ import NoMatch from "../Pages/NoMatch/NoMatch";
 import Pricing from "../Pages/Pricing/Pricing";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
+import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
 import Shop from "../Pages/Shop/Shop";
 import ShopDetails from "../Pages/Shop/ShopDetails";
@@ -89,6 +90,10 @@ export const router = createBrowserRouter([
       {
         path:"/vision",
         element: <Vision />
+      },
+      {
+        path:"/service-more-details/:id",
+        element: <ServiceMoreDetails />
       }
     ],
   },

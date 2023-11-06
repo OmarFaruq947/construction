@@ -107,8 +107,11 @@ const ServicesDetails = () => {
               OUR
               <span className="text-brand"> services</span>
             </h2>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-textColure">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia accusamus? Nostrum doloribus vitae ratione ut ex eos amet atque saepe in! Voluptates, maiores? Officia est fugit qui quod reiciendis?
+          </p>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-5">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {data.map((infoCard) => (
               <ServiceInfoCard key={infoCard.id} infoCard={infoCard} />
             ))}

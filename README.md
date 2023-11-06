@@ -29,7 +29,7 @@ I**nteractivity (minimum 2 section):**
 
 ### Content or Service Listings
 
-- Create a dedicated page where users can explore content or services with a focus on responsive design. Implement filters and sorting options that work well on both large screens and mobile devices.
+- Create a dedicated page where users can explore content or services with a focus on responsive design. Implement filters and sorting options that work well on both large screens and mobile devices. ----(incomplete)
 
 **Content or Service listing page:**
 

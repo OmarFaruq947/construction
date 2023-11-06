@@ -219,12 +219,12 @@ const Navbar = () => {
       >
         <Link
           onClick={doctorsDropdownClose}
-          to="/"
+          to="/servicesDetails"
           className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
           <span>Service</span>
         </Link>
-        {doctorsDropdownOpen && (
+        {/* {doctorsDropdownOpen && (
           <ul className="dropdown-menu  rounded-b-lg w-36 pt-1 absolute  left-auto bg-white block z-50 duration-300 group-hover:translate-y-1 ease-in-out ">
             <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
               <Link
@@ -237,7 +237,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        )}
+        )} */}
       </li>
       {/* doctors end here */}
 
