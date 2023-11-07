@@ -106,7 +106,7 @@ I**nteractivity (minimum 2 section):**
 - Password Field ----(ok)
 - Sign-Up Button ---(ok)
 - Sign-In Button ---(ok)
-- Privacy Policy Link()\***\*\*\*\*\*\***
+- Privacy Policy Link(ok )
 - Error Messages for Validation()
 - Terms and Conditions Checkbox()
 
