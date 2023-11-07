@@ -102,15 +102,16 @@ I**nteractivity (minimum 2 section):**
 
 - Registration Form -----(ok)
 - Login Form ------(ok)
-- User Profile Picture (if applicable)
 - Username or Email Field ---(ok)
 - Password Field ----(ok)
-- Social Media Login Options (if applicable)
 - Sign-Up Button ---(ok)
 - Sign-In Button ---(ok)
-- Error Messages for Validation
-- Terms and Conditions Checkbox
-- Privacy Policy Link
+- Privacy Policy Link()\***\*\*\*\*\*\***
+- Error Messages for Validation()
+- Terms and Conditions Checkbox()
+
+- User Profile Picture (if applicable)
+- Social Media Login Options (if applicable)
 - Redirect to User Profile (after login)
 
 ### User Profile
