@@ -1,15 +1,27 @@
+import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
 import { z } from "zod";
 import logo from "../../assets/logo/colorLogo.png";
 const Registration = () => {
+  const [isChecked, setIsChecked] = useState(false);
+console.log(isChecked);
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
   const userSchema = z.object({
     name: z.string().min(6, { message: "Must be 6 or more characters long" }),
     email: z.string().email({ message: "Must be required your email" }),
     password: z.string().min(6, { message: "Must be 6 digit" }),
-    phone: z.string().max(11, { message: "too long, Must be 11 digit required"}).min(11, { message: "short digit, please ensure 11 digit" }),
-    district: z.string().min(5, { message: "please enter your district (min 12 characters)"}),
+    phone: z
+      .string()
+      .max(11, { message: "too long, Must be 11 digit required" })
+      .min(11, { message: "short digit, please ensure 11 digit" }),
+    district: z
+      .string()
+      .min(5, { message: "please enter your district (min 12 characters)" }),
   });
 
   const [formData, setFormData] = useState({
@@ -32,10 +44,10 @@ const Registration = () => {
       userSchema?.parse(formData);
       console.log("Data is valid:----->>>", formData);
       setValidationErrors(null);
-      toast.success("Successfully submitted")
+      toast.success("Successfully submitted");
     } catch (error) {
       setValidationErrors(error.formErrors.fieldErrors);
-      toast.error("submit Failed")
+      toast.error("submit Failed");
     }
   };
 
@@ -138,42 +150,51 @@ const Registration = () => {
                   {validationErrors.district}
                 </span>
               )}
+              {/* terms and condition */}
+
+              <div className="flex gap-1 mt-8">
+                <input
+                  type="checkbox"
+                  className="form-checkbox text-indigo-600 h-5 w-5"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                />
+                <p className="italic text-[12px]">are you agree ? our Terms and Conditions</p>
+                <span
+                  className={`${!isChecked ? 'text-secondary' : 'text-brand'} text-2xl -mt-1`}
+                  data-tooltip-id="my-tooltip"
+                  data-tooltip-delay-hide={500}
+                >
+                  <Icon icon="heroicons-solid:light-bulb" />
+                </span>
+              </div>
+
               <button
                 type="submit"
-                className="w-full py-3 mt-10 bg-brand
-              font-medium text-white 
+                disabled={`${!isChecked ? 'disabled':'' }`}
+                className="btn w-full py-3 mt-10 bg-brand
+              font-medium text-white
               focus:outline-none hover:bg-secondary hover:shadow-none"
               >
                 Registration
               </button>
-              <p
-                className="text-center underline mt-5 text-[12px] text-secondary cursor-help "
-                data-tooltip-id="my-tooltip"
-                data-tooltip-delay-hide={500}
-              >
-                privacy policy
-              </p>
+             
             </form>
           </div>
         </div>
       </div>
       <Tooltip id="my-tooltip" place="bottom">
         <>
-          <h3>Privacy Policy</h3>
-          <ul className="marker:text-white">
+          <h3 className="text-brand">Terms and Conditions</h3>
+          <hr />
+          <ul className="text-yellow-300">
             <li>
-              Specify whether users are required to provide certain information.
+              Accuracy of Information: You certify that all the information
+              provided during registration is accurate and complete.
             </li>
             <li>
-              Mention encryption, access controls, and data retention policies.
-            </li>
-            <li>Detail the security measures in place to protect user data.</li>
-            <li>
-              Provide links to the privacy policies of these third parties.
-            </li>
-            <li>Disclose the use of cookies or other tracking technologies.</li>
-            <li>
-              Explain their purpose and how users can manage their preferences
+              Governing Law: These terms are governed by the laws, and you agree
+              to submit to the exclusive jurisdiction of its courts.
             </li>
           </ul>
         </>

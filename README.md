@@ -107,7 +107,7 @@ I**nteractivity (minimum 2 section):**
 - Sign-Up Button ---(ok)
 - Sign-In Button ---(ok)
 - Privacy Policy Link(ok )
-- Error Messages for Validation()
+- Error Messages for Validation(ok)
 - Terms and Conditions Checkbox()
 
 - User Profile Picture (if applicable)
