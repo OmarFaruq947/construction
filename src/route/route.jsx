@@ -11,6 +11,7 @@ import Home1 from "../Pages/Home/Home1";
 import Mission from "../Pages/MissionAndVision/Mission";
 import Vision from "../Pages/MissionAndVision/Vision";
 import NoMatch from "../Pages/NoMatch/NoMatch";
+import Payment from "../Pages/Payment/Payment";
 import Pricing from "../Pages/Pricing/Pricing";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
@@ -99,6 +100,10 @@ export const router = createBrowserRouter([
       {
         path:"/service-more-details/:id",
         element: <ServiceMoreDetails />
+      },
+      {
+        path:"/payment",
+        element: <Payment />
       }
     ],
   },

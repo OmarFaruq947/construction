@@ -82,7 +82,7 @@ I**nteractivity (minimum 2 section):**
 - Booking Form ----(ok)
 - User Details and Contact Information----(ok)
   -name, email, phone, altPhone, present_address, WorkingSite_address, NID_number, Additional Information
-- Cancellation Policy-----()****\*\*****
+- Cancellation Policy-----(ok)
 
 - Review and Edit Booking (if needed)
 - Date and Time Selection (if applicable)

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({text1, text2, description}) => {
+const Heading = ({text1, text2, description, style}) => {
   return (
     <>
       <div className="flex flex-col text-center w-full my-20">

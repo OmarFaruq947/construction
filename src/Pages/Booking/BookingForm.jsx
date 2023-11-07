@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import InputFiled from "../../components/InputFiled/InputFiled";
 
 const BookingForm = () => {
@@ -36,13 +37,22 @@ const BookingForm = () => {
                 name="additional-information"
                 placeholder="Additional Information"
               />
+
+              <InputFiled
+                type="url"
+                name="url"
+                placeholder="google drive link for others Documents"
+              />
             </div>
           </div>
 
           <div>
-            <button className="hover:shadow-form w-full rounded-md bg-brand hover:bg-secondary duration-300 py-3 px-8 text-center text-base font-semibold text-white outline-none">
+            <Link
+              to="/payment"
+              className="hover:shadow-form bg-brand hover:bg-secondary duration-300 py-3 px-8 text-center text-base font-semibold text-white"
+            >
               Book Confirm
-            </button>
+            </Link>
           </div>
         </form>
       </div>
