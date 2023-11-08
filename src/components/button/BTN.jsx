@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BTN = ({link, innerText}) => {
+const BTN = ({link, innerText, children}) => {
     
   return (
     <>

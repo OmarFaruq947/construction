@@ -108,11 +108,11 @@ I**nteractivity (minimum 2 section):**
 - Sign-In Button ---(ok)
 - Privacy Policy Link(ok )
 - Error Messages for Validation(ok)
-- Terms and Conditions Checkbox()
+- Terms and Conditions Checkbox(ok)
 
-- User Profile Picture (if applicable)
-- Social Media Login Options (if applicable)
-- Redirect to User Profile (after login)
+- User Profile Picture (if applicable) ---(ok)
+- Social Media Login Options (if applicable) ----()
+- Redirect to User Profile (after login) -----()
 
 ### User Profile
 

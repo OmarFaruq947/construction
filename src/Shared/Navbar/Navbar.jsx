@@ -1,11 +1,12 @@
+import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import colorLogo from "../../assets/logo/colorLogo.png";
 
-import Modal from "./Modal";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [isLogeIn, setLogeIn] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
   const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
@@ -15,7 +16,6 @@ const Navbar = () => {
 
   // for home
   const toggleHomeDropdown = () => setHomeDropdownOpen(!homeDropdownOpen);
-
 
   //for pages
   const togglePagesDropdown = () => setPagesDropdownOpen(!pagesDropdownOpen);
@@ -40,13 +40,9 @@ const Navbar = () => {
       <li
         className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-400"
         onMouseEnter={toggleHomeDropdown}
-        
         onClick={toggleHomeDropdown}
       >
-        <Link
-         
-          className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
-        >
+        <Link to='/' className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] ">
           <span>Home</span>
         </Link>
       </li>
@@ -300,15 +296,58 @@ const Navbar = () => {
           </ul>
           <ul className=" items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="#"
-                className="relative inline-flex items-center justify-start px-4 py-2 overflow-hidden font-bold text-[14px] transition-all bg-brand rounded hover:bg-white group"
+              <div
+                className="avatar dropdown dropdown-end  mt-1.5"
+                tabIndex={0}
               >
-                <span className="w-48 h-48 rounded rotate-[-40deg] bg-secondary absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">
-                  <Modal />
-                </span>
-              </a>
+                <div className="w-10 rounded-full ring ring-brand  ring-offset-2 ">
+                  <img
+                    src={
+                      !isLogeIn
+                        ? "https://i.ibb.co/hFjP6S5/Screenshot-2020-12-14-114235.png"
+                        : "https://i.ibb.co/nn1YTRS/image159-1024x655.jpg"
+                    }
+                  />
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content z-[1] menu p-2 shadow bg-white mt-3 rounded-box w-52"
+                  >
+                    <li className="bg-brand mb-[1px] rounded-lg">
+                      <Link to="/dashboard/profile">Profile</Link>
+                    </li>
+                    <li className="bg-brand mb-[1px] rounded-lg">
+                      <Link to="/dashboard/user-dashboard">Dashboard</Link>
+                    </li>
+                    <li className="bg-brand mb-[1px] rounded-lg">
+                      <a>Settings</a>
+                    </li>
+                    <li className="bg-brand mb-[1px] rounded-lg">
+                      <a
+                        target="_blank"
+                        href="https://omarfaruqmebd.netlify.app/"
+                      >
+                        Developer
+                      </a>
+                    </li>
+
+                    <li className="mt-1.5 bg-secondary text-brand rounded-md ">
+                      {!!isLogeIn ? (
+                        <span>
+                          {" "}
+                          <Icon icon="ic:outline-logout" />
+                          Log out
+                        </span>
+                      ) : (
+                        <Link to="/registration">
+                          {" "}
+                          <Icon icon="material-symbols-light:login-outline" />{" "}
+                          Logo In
+                        </Link>
+                      )}
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
           <div className="lg:hidden">

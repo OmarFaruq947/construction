@@ -5,7 +5,7 @@ const Modal = () => {
   return (
     <>
       <button type="button" onClick={() => setShowModal(true)}>
-        Get A Quote
+        modal open
       </button>
       {showModal ? (
         <>

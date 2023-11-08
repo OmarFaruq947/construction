@@ -13,6 +13,12 @@ import Vision from "../Pages/MissionAndVision/Vision";
 import NoMatch from "../Pages/NoMatch/NoMatch";
 import Payment from "../Pages/Payment/Payment";
 import Pricing from "../Pages/Pricing/Pricing";
+
+import Dashboard from "../Dashboard/Dashboard";
+import DashboardDetails from "../Dashboard/DashboardDetails";
+import UserBooking from "../Dashboard/UserBooking";
+import UserFeedBack from "../Dashboard/UserFeedBack";
+import UserProfile from "../Dashboard/UserProfile";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
@@ -107,4 +113,28 @@ export const router = createBrowserRouter([
       }
     ],
   },
+
+  {
+    path:'/dashboard',
+    element:<Dashboard />,
+    errorElement: <NoMatch />,
+    children:[
+      {
+        path: "/dashboard/user-dashboard",
+        element: <DashboardDetails/>,
+      },
+      {
+        path: "/dashboard/profile",
+        element: <UserProfile/>,
+      },
+      {
+        path: "/dashboard/booking",
+        element: <UserBooking />,
+      },
+      {
+        path: "/dashboard/feedback",
+        element: <UserFeedBack />,
+      },
+    ]
+  }
 ]);
