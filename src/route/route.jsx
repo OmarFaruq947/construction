@@ -19,15 +19,12 @@ import UserBooking from "../Dashboard/UserBooking";
 import UserFeedBack from "../Dashboard/UserFeedBack";
 import UserProfile from "../Dashboard/UserProfile";
 import HotNews from "../Pages/HotNews/HotNews";
-import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
+import Checkout from "../Pages/Shop/Checkout";
 import Shop from "../Pages/Shop/Shop";
-import ShopDetails from "../Pages/Shop/ShopDetails";
 import Team from "../Pages/Team/Team";
-
-
 
 export const router = createBrowserRouter([
   {
@@ -43,10 +40,7 @@ export const router = createBrowserRouter([
         path: "/servicesDetails",
         element: <ServicesDetails />,
       },
-      {
-        path: "/ProjectDetails",
-        element: <ProjectDetails />,
-      },
+      
       {
         path: "/blogRegular",
         element: <BlogRegular />,
@@ -75,10 +69,7 @@ export const router = createBrowserRouter([
         path: "/shop",
         element: <Shop />,
       },
-      {
-        path: "/shopDetails",
-        element: <ShopDetails />,
-      },
+     
       {
         path: "/contact",
         element: <Contact />,
@@ -88,44 +79,48 @@ export const router = createBrowserRouter([
         element: <Registration />,
       },
       {
-        path:"/mission",
-        element: <Mission />
+        path: "/mission",
+        element: <Mission />,
       },
       {
-        path:"/vision",
-        element: <Vision />
+        path: "/vision",
+        element: <Vision />,
       },
       {
-        path:"/booking",
-        element: <Booking />
+        path: "/booking",
+        element: <Booking />,
       },
       {
-        path:"/service-more-details/:id",
-        element: <ServiceMoreDetails />
+        path: "/service-more-details/:id",
+        element: <ServiceMoreDetails />,
       },
       {
-        path:"/payment",
-        element: <Payment />
+        path: "/payment",
+        element: <Payment />,
       },
       {
-        path:"/hot-news",
-        element: <HotNews />
-      }
+        path: "/hot-news",
+        element: <HotNews />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
+      },
     ],
   },
 
   {
-    path:'/dashboard',
-    element:<Dashboard />,
+    path: "/dashboard",
+    element: <Dashboard />,
     errorElement: <NoMatch />,
-    children:[
+    children: [
       {
         path: "/dashboard/user-dashboard",
-        element: <DashboardDetails/>,
+        element: <DashboardDetails />,
       },
       {
         path: "/dashboard/profile",
-        element: <UserProfile/>,
+        element: <UserProfile />,
       },
       {
         path: "/dashboard/booking",
@@ -135,6 +130,6 @@ export const router = createBrowserRouter([
         path: "/dashboard/feedback",
         element: <UserFeedBack />,
       },
-    ]
-  }
+    ],
+  },
 ]);

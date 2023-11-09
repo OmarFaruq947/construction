@@ -69,7 +69,7 @@ console.log(isChecked);
                 value={formData.name}
                 onChange={handleInputChange}
                 placeholder="name"
-                className="block w-full py-3 px-1 mt-2 mb-4 appearance-none 
+                className="block w-full py-3 px-1 mt-2 mb-4   
               border-b-2 border-gray-100
               focus:text-gray-500 focus:outline-none focus:border-gray-200"
               />
@@ -87,7 +87,7 @@ console.log(isChecked);
                 onChange={handleInputChange}
                 placeholder="e-mail"
                 className="block w-full py-3 px-1 mt-2 
-              appearance-none 
+                
               border-b-2 border-gray-100
               focus:text-gray-500 focus:outline-none focus:border-gray-200"
               />
@@ -105,7 +105,7 @@ console.log(isChecked);
                 onChange={handleInputChange}
                 placeholder="Password"
                 className="block w-full py-3 px-1 mt-2 
-               appearance-none 
+                 
               border-b-2 border-gray-100
               focus:text-gray-500 focus:outline-none focus:border-gray-200"
               />
@@ -123,7 +123,7 @@ console.log(isChecked);
                 onChange={handleInputChange}
                 placeholder="Phone"
                 className="block w-full py-3 px-1 mt-2 
-               appearance-none 
+                 
               border-b-2 border-gray-100
               focus:text-gray-500 focus:outline-none focus:border-gray-200"
               />
@@ -141,7 +141,7 @@ console.log(isChecked);
                 onChange={handleInputChange}
                 placeholder="district"
                 className="block w-full py-3 px-1 mt-2 
-               appearance-none 
+                 
               border-b-2 border-gray-100
               focus:text-gray-500 focus:outline-none focus:border-gray-200"
               />

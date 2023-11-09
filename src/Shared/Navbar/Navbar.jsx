@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import colorLogo from "../../assets/logo/colorLogo.png";
 
+import ProductPrice from "../../Pages/Shop/ProductPrice";
+import ShopDetailsCard from "../../Pages/Shop/ShopDetailsCard";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -42,7 +44,10 @@ const Navbar = () => {
         onMouseEnter={toggleHomeDropdown}
         onClick={toggleHomeDropdown}
       >
-        <Link to='/' className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] ">
+        <Link
+          to="/"
+          className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
+        >
           <span>Home</span>
         </Link>
       </li>
@@ -112,16 +117,7 @@ const Navbar = () => {
                 Shop
               </Link>
             </li>
-            <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="shopDetails"
-                to="/shopDetails"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Shop Details
-              </Link>
-            </li>
+
           </ul>
         )}
       </li>
@@ -151,7 +147,7 @@ const Navbar = () => {
                 Blog
               </Link>
             </li>
-            
+
             <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
               <Link
                 onClick={isMenuOpen}
@@ -210,20 +206,6 @@ const Navbar = () => {
         >
           <span>Service</span>
         </Link>
-        {/* {doctorsDropdownOpen && (
-          <ul className="dropdown-menu  rounded-b-lg w-36 pt-1 absolute  left-auto bg-white block z-50 duration-300 group-hover:translate-y-1 ease-in-out ">
-            <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="servicesDetails"
-                to="/servicesDetails"
-                className="block px-4 text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Service Details
-              </Link>
-            </li>
-          </ul>
-        )} */}
       </li>
       {/* doctors end here */}
 
@@ -236,35 +218,6 @@ const Navbar = () => {
         >
           Contact us
         </Link>
-      </li>
-
-      <li>
-        {/* search bar start*/}
-        <div className="relative text-textColure">
-          <input
-            className="border-2 border-yellow-300 bg-white h-8 px-5 rounded-lg text-sm "
-            type="search"
-            name="search"
-            placeholder="Search"
-          />
-          <button type="submit" className="absolute right-0 top-0 mt-2 mr-4">
-            <svg
-              className="text-brand h-4 w-4 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 56.966 56.966"
-              style={{ enableBackground: "new 0 0 56.966 56.966" }}
-              xml:space="preserve"
-            >
-              <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-            </svg>
-          </button>
-        </div>
-        {/*search bar end*/}
       </li>
     </>
   );
@@ -285,6 +238,46 @@ const Navbar = () => {
             {menuItems}
           </ul>
           <ul className=" items-center hidden space-x-8 lg:flex">
+            {/* add to cart start*/}
+            <li className="cursor-pointer indicator drawer drawer-end">
+            <span className="indicator-item badge badge-secondary">3</span>
+                <input
+                  id="my-drawer-4"
+                  type="checkbox"
+                  className="drawer-toggle"
+                />
+                <div className="drawer-content">
+                  {/* Page content here */}
+                  <label htmlFor="my-drawer-4" className="drawer-button">
+                    <Icon
+                      icon="tdesign:cart-add"
+                      className="text-secondary w-7 h-7"
+                    />
+                  </label>
+                </div>
+                <div className="drawer-side z-[9999]">
+                  <label
+                    htmlFor="my-drawer-4"
+                    aria-label="close sidebar"
+                    className="drawer-overlay"
+                  ></label>
+                  <ul className="menu p-4 w-80 min-h-[85%] mt-[6.8%] bg-base-200 text-base-content">
+                    {/* Sidebar content here */}
+                    <p className="text-center font-semibold mb-3 text-secondary text-lg">
+                      Product List (3)
+                    </p>
+                    <li>
+                    <ShopDetailsCard />
+                    <ShopDetailsCard />
+                    <ShopDetailsCard />
+                    </li>
+                    <li>
+                      <ProductPrice />
+                    </li>
+                  </ul>
+                </div>
+            </li>
+            {/* add to cart end */}
             <li>
               <div
                 className="avatar dropdown dropdown-end  mt-1.5"
