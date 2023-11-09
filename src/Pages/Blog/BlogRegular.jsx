@@ -141,7 +141,7 @@ const BlogRegular = () => {
   return (
     <>
       <AllComponentTopBanner bannerContent={bannerContent} />
-      <div className="flex justify-center w-screen h-screen px-4 text-accent">
+      <div className="flex justify-center w-screen h-screen px-4 ">
         <div className="flex w-full max-w-screen-lg">
           <div className="flex flex-col w-64 py-4 pr-3">
             <a
@@ -191,9 +191,7 @@ const BlogRegular = () => {
           <div className="flex flex-col flex-grow border-l border-r border-[#eee]">
             <div className="flex justify-between flex-shrink-0 px-8 py-4 border-b border-[#eee]">
               <h1 className="text-xl font-semibold  text-brand">Feed Title</h1>
-              <button className="flex items-center h-8 px-2 text-sm rounded-sm bg-brand hover:bg-secondary duration-300 tex">
-                New post
-              </button>
+              
             </div>
             <div className="flex-grow h-0 overflow-auto">
               <div className="flex w-full p-8 border-b-4 border-[#eee]">
@@ -213,10 +211,10 @@ const BlogRegular = () => {
                     defaultValue={""}
                   />
                   <div className="flex justify-between mt-2">
-                    <button className="flex items-center h-8 px-3 text-xs rounded-sm hover:bg-yellow-200">
-                      Attach
-                    </button>
-                    <button className="flex items-center h-8 px-3 text-xs rounded-sm bg-brand hover:bg-secondary duration-300">
+
+                  <input type="file" className="file-input file-input-ghost bg-brand w-full max-w-xs" />
+
+                    <button className="btn flex items-center h-8 px-3 text-xs rounded-sm bg-brand hover:bg-secondary hover:text-white duration-300">
                       Post
                     </button>
                   </div>

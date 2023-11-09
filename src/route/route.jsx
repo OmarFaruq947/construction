@@ -19,6 +19,7 @@ import UserBooking from "../Dashboard/UserBooking";
 import UserFeedBack from "../Dashboard/UserFeedBack";
 import UserProfile from "../Dashboard/UserProfile";
 import HotNews from "../Pages/HotNews/HotNews";
+import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
@@ -54,7 +55,7 @@ export const router = createBrowserRouter([
         element: <FAQ />,
       },
       {
-        path: "/history",
+        path: "/checkout/history",
         element: <History />,
       },
       {
@@ -68,6 +69,10 @@ export const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/ProjectDetails",
+        element: <ProjectDetails />,
       },
      
       {

@@ -77,16 +77,7 @@ const Navbar = () => {
                 FAQ
               </Link>
             </li>
-            <li className="bg-brand mb-[1px] hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="history"
-                to="/history"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                History
-              </Link>
-            </li>
+            
             <li className="bg-brand mb-[1px] hover:bg-secondary duration-300 py-2 text-white">
               <Link
                 onClick={isMenuOpen}
@@ -170,26 +161,12 @@ const Navbar = () => {
         onClick={toggleBlogDropdown}
       >
         <Link
+          to="/ProjectDetails"
           onClick={blogDropdownClose}
           className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
           <span>Project</span>
         </Link>
-
-        {blogDropdownOpen && (
-          <ul className="dropdown-menu  rounded-b-lg w-32 pt-1 absolute top-auto bg-white block z-50 duration-300 group-hover:translate-y-1 ease-in-out ">
-            <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="ProjectDetails"
-                to="/ProjectDetails"
-                className="block px-4 text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Project Details
-              </Link>
-            </li>
-          </ul>
-        )}
       </li>
       {/* blog end here */}
 

@@ -1,5 +1,7 @@
+import { Icon } from "@iconify/react";
 import { React, useState } from "react";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 import { z } from "zod";
 
 const Checkout = () => {
@@ -57,15 +59,11 @@ const Checkout = () => {
 
   return (
     <>
-
-<div className="flex flex-col text-center w-full mt-10">
+      <div className="flex flex-col text-center w-full mt-10">
         <h2 className="text-secondary font-bold text-xl uppercase relative h-auto w-full pb-1 text-center ">
-         Shipping & 
-          <span className="text-brand ml-1.5">Payment</span>
+          Shipping &<span className="text-brand ml-1.5">Payment</span>
         </h2>
       </div>
-
-
 
       <div class="grid grid-cols-6 gap-4 max-w-[80%] mx-auto my-10">
         {/* part 1 */}
@@ -152,7 +150,8 @@ const Checkout = () => {
               </p>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-4">
+
               <button
                 type="submit"
                 disabled={`${!isPayment ? "disabled" : ""}`}
@@ -162,6 +161,17 @@ const Checkout = () => {
               >
                 Order Confirm
               </button>
+
+              <Link
+                to='/checkout/history'
+                disabled={`${!isPayment ? "disabled" : ""}`}
+                className="btn w-1/3 py-3 mt-10 bg-success
+              font-medium text-white
+              focus:outline-none hover:bg-secondary hover:shadow-none"
+              >
+                Download Invoice <Icon icon="material-symbols:download" className="w-7 h-7"/>
+              </Link>
+
             </div>
           </form>
         </div>
@@ -196,7 +206,7 @@ const Checkout = () => {
               <div className=" ml-4 flex gap-4 mt-8">
                 <input
                   type="checkbox"
-                  className="form-checkbox text-indigo-600 h-5 w-5"
+                  className="form-checkbox text-brand h-5 w-5"
                   checked={isPayment}
                   onChange={handlePaymentComplete}
                 />
