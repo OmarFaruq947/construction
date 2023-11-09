@@ -116,17 +116,17 @@ I**nteractivity (minimum 2 section):**
 
 ### User Profile
 
-- Create responsive user profiles that allow users to manage personal information, contact details, history (e.g., purchase history or content interactions), and user-generated content (if applicable).
+- Create responsive user profiles that allow users to manage personal information, contact details, history (e.g., purchase history or content interactions), and user-generated content (if applicable). ---(ok)
 
 **User Profile page:**
 
-- User Profile Picture (if applicable)
-- User Information
-- Profile Settings
-- Purchase or Booking or Content or Service Interactions History
+- User Profile Picture (if applicable) ----(ok)
+- User Information ----(ok)
+- Profile Settings ----(ok)
+- Purchase or Booking or Content or Service Interactions History ----(ok)
 - Payment Methods (only UI)
-- Edit Profile Button
-- Logout Button
+- Edit Profile Button ----(ok)
+- Logout Button ----(ok)
 
 ### Notifications (Optional)
 
@@ -134,17 +134,17 @@ I**nteractivity (minimum 2 section):**
 
 ### Feedback Forms
 
-- Design feedback forms that adapt to different screen sizes, making it convenient for users to provide comments and suggestions regardless of their device.
+- Design feedback forms that adapt to different screen sizes, making it convenient for users to provide comments and suggestions regardless of their device. ----(ok)
 
 **Feedback Page:**
 
-- Feedback Form
-- Fields for User's Name and Email
+- Feedback Form ----(ok)
+- Fields for User's Name and Email ----(ok)
 - Rating Scale
-- Comments or Suggestions Box
-- Submit Button
+- Comments or Suggestions Box ----(ok)
+- Submit Button ----(ok)
 - Clear Form Button
-- Thank You Message
+- Thank You Message ----(ok)
 
 ### Dashboard for Users
 
@@ -154,11 +154,11 @@ I**nteractivity (minimum 2 section):**
 
 **User Dashboard page:**
 
-- Overview of User's Activities
-- Booking History
-- Current Booking Status
+- Overview of User's Activities -----(ok)
+- Booking History -----(ok)
+- Current Booking Status -----(ok)
 - User Profile Summary
-- Edit Profile Button
+- Edit Profile Button -----(ok)
 - Notifications Center
 - Quick Actions
 
@@ -174,7 +174,7 @@ I**nteractivity (minimum 2 section):**
 - User Management Section
 - Content or Service Management Section
 - Booking , Content Management Section ( make any part of the webpage dynamically )
-- User profile summary
+- User profile summary -----(ok)
 - Notifications Center(optional)
 - Quick Links to Common Actions
 

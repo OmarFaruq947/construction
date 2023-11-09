@@ -7,7 +7,7 @@ const TinyNavbar = () => {
       <nav className="bg-secondary h-8">
         <div className="px-4">
           <div className="flex justify-between py-1 item-center h-8">
-            {/* contact info */}
+        
             {/* 1st Flex section */}
             <div className="flex item-center">
               <a
@@ -88,8 +88,8 @@ const TinyNavbar = () => {
                 </div>
               </a>
 
-              <a
-                href="/news"
+              <Link
+                to="/hot-news"
                 className="space-x-1 pl-2 items-center text-accent hidden md:block lg:block"
               >
                 <div className="flex justify-center items-center">
@@ -110,7 +110,7 @@ const TinyNavbar = () => {
                     Hot News
                   </span>
                 </div>
-              </a>
+              </Link>
               <Link
                 to="/registration"
                 className="font-medium group pl-3 hover:scale-105 duration-300"

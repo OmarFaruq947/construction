@@ -28,7 +28,7 @@ const UserFeedBack = () => {
       userSchema?.parse(formData);
       console.log("Data is valid:----->>>", formData);
       setValidationErrors(null);
-      toast.success("Successfully submitted");
+      toast.success("Thank you for your feedback 💖💖");
     } catch (error) {
       setValidationErrors(error.formErrors.fieldErrors);
       toast.error("submit Failed");

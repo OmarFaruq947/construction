@@ -151,17 +151,7 @@ const Navbar = () => {
                 Blog
               </Link>
             </li>
-            <li className="bg-brand mb-[1px] hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="blogGrid"
-                to="/blogGrid"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Blog Grid
-              </Link>
-            </li>
-
+            
             <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
               <Link
                 onClick={isMenuOpen}

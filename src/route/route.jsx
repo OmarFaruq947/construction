@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import BlogDetails from "../Pages/Blog/BlogDetails";
-import BlogGrid from "../Pages/Blog/BlogGrid";
 import BlogRegular from "../Pages/Blog/BlogRegular";
 import Booking from "../Pages/Booking/Booking";
 import Contact from "../Pages/Contact/Contact";
@@ -19,6 +18,7 @@ import DashboardDetails from "../Dashboard/DashboardDetails";
 import UserBooking from "../Dashboard/UserBooking";
 import UserFeedBack from "../Dashboard/UserFeedBack";
 import UserProfile from "../Dashboard/UserProfile";
+import HotNews from "../Pages/HotNews/HotNews";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
@@ -50,10 +50,6 @@ export const router = createBrowserRouter([
       {
         path: "/blogRegular",
         element: <BlogRegular />,
-      },
-      {
-        path: "/blogGrid",
-        element: <BlogGrid />,
       },
       {
         path: "/blogDetails",
@@ -110,6 +106,10 @@ export const router = createBrowserRouter([
       {
         path:"/payment",
         element: <Payment />
+      },
+      {
+        path:"/hot-news",
+        element: <HotNews />
       }
     ],
   },
