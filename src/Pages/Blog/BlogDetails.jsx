@@ -1,14 +1,14 @@
 import { Icon } from "@iconify/react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import AllComponentTopBanner from "../../Shared/AllComponentTopBanner/AllComponentTopBanner";
 import bannerImg from "../../assets/Banner/BannerPicture/bannerPic4.png";
 import banner from "../../assets/Banner/pic1.jpg";
 import blogImage from "../../assets/blogpic/pic2.jpg";
 import {
-    default as blogImage2,
-    default as blogImage3,
-    default as blogImage4,
+  default as blogImage2,
+  default as blogImage3,
+  default as blogImage4,
 } from "../../assets/blogpic/pic4.jpg";
 
 const BlogDetails = () => {
@@ -19,6 +19,9 @@ const BlogDetails = () => {
     banner: `${banner}`,
     banner_imag: `${bannerImg}`,
   };
+
+  const {id} = useParams()
+  console.log(id);
 
   return (
     <>

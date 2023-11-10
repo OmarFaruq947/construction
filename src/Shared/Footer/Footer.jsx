@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import whiteLogo from "../../assets/logo/whiteLogo.png";
 
 const Footer = () => {
@@ -139,33 +140,27 @@ const Footer = () => {
                 </p>
                 <div className="h-[2px] w-12 mt-[-3px] bg-brand"></div>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-white">
-                  <a className="hover:opacity-75 cursor-pointer" href>
+                  <Link to='/contact' className="hover:opacity-75 cursor-pointer" href>
                     Contact
-                  </a>
-                  <a className="hover:opacity-75 cursor-pointer" href>
+                  </Link>
+                  <Link to='/faq' className="hover:opacity-75 cursor-pointer" href>
                     FAQs
-                  </a>
-                  <a className="hover:opacity-75 cursor-pointer" href>
-                    Live Chat
-                  </a>
+                  </Link>
                 </nav>
               </div>
               <div>
                 <p className="font-medium text-gray-400 uppercase">Legal</p>
                 <div className="h-[2px] w-6 mt-[-3px] bg-brand"></div>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-white">
-                  <a className="hover:opacity-75 cursor-pointer" href>
+                  <Link to='/privacy-policy' className="hover:opacity-75 cursor-pointer" href>
                     Privacy Policy
-                  </a>
-                  <a className="hover:opacity-75 cursor-pointer" href>
+                  </Link>
+                  <Link to='/terms-conditions' className="hover:opacity-75 cursor-pointer" href>
                     Terms &amp; Conditions
-                  </a>
-                  <a className="hover:opacity-75 cursor-pointer" href>
+                  </Link>
+                  <Link to='return-policy' className="hover:opacity-75 cursor-pointer" href>
                     Returns Policy
-                  </a>
-                  <a className="hover:opacity-75 cursor-pointer" href>
-                    Accessibility
-                  </a>
+                  </Link>
                 </nav>
               </div>
             </div>

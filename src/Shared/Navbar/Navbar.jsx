@@ -10,186 +10,95 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isLogeIn, setLogeIn] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
-  const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
-  const [clinicsDropdownOpen, setClinicsDropdownOpen] = useState(false);
+
+
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
   const [doctorsDropdownOpen, setDoctorsDropdownOpen] = useState(false);
 
-  // for home
-  const toggleHomeDropdown = () => setHomeDropdownOpen(!homeDropdownOpen);
-
-  //for pages
-  const togglePagesDropdown = () => setPagesDropdownOpen(!pagesDropdownOpen);
-  const pagesDropdownClose = () => setPagesDropdownOpen(false);
-
-  //for clinics
-  const toggleClinicsDropdown = () =>
-    setClinicsDropdownOpen(!clinicsDropdownOpen);
-  const clinicsDropdownClose = () => setClinicsDropdownOpen(false);
 
   //for blog
   const toggleBlogDropdown = () => setBlogDropdownOpen(!blogDropdownOpen);
   const blogDropdownClose = () => setBlogDropdownOpen(false);
 
-  //for doctors
-  const toggleDoctorDropdown = () =>
-    setDoctorsDropdownOpen(!doctorsDropdownOpen);
-  const doctorsDropdownClose = () => setDoctorsDropdownOpen(false);
 
   const menuItems = (
     <>
-      <li
-        className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-400"
-        onMouseEnter={toggleHomeDropdown}
-        onClick={toggleHomeDropdown}
-      >
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-400">
         <Link
+        onClick={isMenuOpen}
           to="/"
           className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
           <span>Home</span>
         </Link>
       </li>
-      {/* home end here */}
-      <li
-        className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300 "
-        onMouseEnter={togglePagesDropdown}
-        onMouseLeave={pagesDropdownClose}
-        onClick={togglePagesDropdown}
-      >
+
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-400">
         <Link
-          onClick={pagesDropdownClose}
-          className="flex group items-center py-[14px] hover:translate-x-1 duration-300 uppercase  text-[14px] "
+        onClick={isMenuOpen}
+          to="/team"
+          className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
-          <span>Pages</span>
+          <span>Team</span>
         </Link>
-
-        {pagesDropdownOpen && (
-          <ul className="dropdown-menu  rounded-b-lg w-32 pt-1 absolute top-auto bg-white block z-50 duration-300 group-hover:translate-y-1 ease-in-out ">
-            <li className="py-1/2 mb-[1px] hover:bg-secondary duration-300 bg-brand py-2 text-secondary hover:text-brand">
-              <Link
-                onClick={isMenuOpen}
-                title="Faq"
-                to="/faq"
-                className="block px-4  text-[14px] hover:translate-x-1 duration-300"
-              >
-                FAQ
-              </Link>
-            </li>
-            
-            <li className="bg-brand mb-[1px] hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="pricing"
-                to="/pricing"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Pricing
-              </Link>
-            </li>
-            <li className="bg-brand mb-[1px] hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="team"
-                to="/team"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Team
-              </Link>
-            </li>
-            <li className="bg-brand mb-[1px] hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="shop"
-                to="/shop"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Shop
-              </Link>
-            </li>
-
-          </ul>
-        )}
       </li>
-      {/* pages end here */}
-      <li
-        className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300 "
-        onMouseEnter={toggleClinicsDropdown}
-        onMouseLeave={clinicsDropdownClose}
-        onClick={toggleClinicsDropdown}
-      >
+
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300 ">
         <Link
-          onClick={clinicsDropdownClose}
+        onClick={isMenuOpen}
+          to="/blogRegular"
           className="flex group items-center py-[14px]   hover:translate-x-1 duration-300 uppercase  text-[14px]"
         >
           <span>Blog</span>
         </Link>
-
-        {clinicsDropdownOpen && (
-          <ul className="dropdown-menu  rounded-b-lg w-32 pt-1 absolute top-auto bg-white block z-50 duration-300 group-hover:translate-y-1 ease-in-out ">
-            <li className="py-1/2 mb-[1px] hover:bg-secondary duration-300 bg-brand py-2 text-secondary hover:text-brand">
-              <Link
-                onClick={isMenuOpen}
-                title="blogRegular"
-                to="/blogRegular"
-                className="block px-4  text-[14px] hover:translate-x-1 duration-300"
-              >
-                Blog
-              </Link>
-            </li>
-
-            <li className="bg-brand hover:bg-secondary duration-300 py-2 text-white">
-              <Link
-                onClick={isMenuOpen}
-                title="blogDetails"
-                to="/blogDetails"
-                className="block px-4    text-[14px] text-gray-700 hover:text-brand hover:translate-x-1 duration-300"
-              >
-                Blog Details
-              </Link>
-            </li>
-          </ul>
-        )}
       </li>
-      {/* clinics end here */}
+      
 
-      <li
-        className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300  "
-        onMouseEnter={toggleBlogDropdown}
-        onMouseLeave={blogDropdownClose}
-        onClick={toggleBlogDropdown}
-      >
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300  ">
         <Link
+        onClick={isMenuOpen}
           to="/ProjectDetails"
-          onClick={blogDropdownClose}
           className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
           <span>Project</span>
         </Link>
       </li>
-      {/* blog end here */}
+     
 
-      <li
-        className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300"
-        onMouseEnter={toggleDoctorDropdown}
-        onMouseLeave={doctorsDropdownClose}
-        onClick={toggleDoctorDropdown}
-      >
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300">
         <Link
-          onClick={doctorsDropdownClose}
+        onClick={isMenuOpen}
           to="/servicesDetails"
           className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
         >
           <span>Service</span>
         </Link>
       </li>
-      {/* doctors end here */}
+
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-400">
+        <Link
+        onClick={isMenuOpen}
+          to="/shop"
+          className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
+        >
+          <span>Store</span>
+        </Link>
+      </li>
+
+      <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300">
+        <Link
+        onClick={isMenuOpen}
+          to="/pricing"
+          className="flex group items-center py-[14px]  hover:translate-x-1 duration-300 uppercase  text-[14px] "
+        >
+          <span>Pricing</span>
+        </Link>
+      </li>
+     
 
       <li className="font-bold nav-item  text-[14px] text-black  hover:text-brand duration-300">
         <Link
           onClick={isMenuOpen}
-          title="Contact us"
           to="/contact"
           className="flex group items-center py-[14px] hover:translate-x-1 duration-300 uppercase  text-[14px]"
         >
@@ -205,54 +114,53 @@ const Navbar = () => {
         <div className="relative flex items-center justify-between">
           <Link
             to="/"
-            aria-label="Company"
-            title="Company"
+           
             className="inline-flex items-center"
           >
-            <img src={colorLogo} alt="" className="w-40" />
+            <img src={colorLogo} alt="..." className="w-40" />
           </Link>
-          <ul className="items-center nav-list hidden space-x-8 lg:flex">
+          <ul className="items-center nav-list hidden space-x-4 lg:flex">
             {menuItems}
           </ul>
           <ul className=" items-center hidden space-x-8 lg:flex">
             {/* add to cart start*/}
             <li className="cursor-pointer indicator drawer drawer-end">
-            <span className="indicator-item badge badge-secondary">3</span>
-                <input
-                  id="my-drawer-4"
-                  type="checkbox"
-                  className="drawer-toggle"
-                />
-                <div className="drawer-content">
-                  {/* Page content here */}
-                  <label htmlFor="my-drawer-4" className="drawer-button">
-                    <Icon
-                      icon="tdesign:cart-add"
-                      className="text-secondary w-7 h-7"
-                    />
-                  </label>
-                </div>
-                <div className="drawer-side z-[9999]">
-                  <label
-                    htmlFor="my-drawer-4"
-                    aria-label="close sidebar"
-                    className="drawer-overlay"
-                  ></label>
-                  <ul className="menu p-4 w-80 min-h-[85%] mt-[6.8%] bg-base-200 text-base-content">
-                    {/* Sidebar content here */}
-                    <p className="text-center font-semibold mb-3 text-secondary text-lg">
-                      Product List (3)
-                    </p>
-                    <li>
+              <span className="indicator-item badge badge-secondary">3</span>
+              <input
+                id="my-drawer-4"
+                type="checkbox"
+                className="drawer-toggle"
+              />
+              <div className="drawer-content">
+                {/* Page content here */}
+                <label htmlFor="my-drawer-4" className="drawer-button">
+                  <Icon
+                    icon="tdesign:cart-add"
+                    className="text-secondary w-7 h-7"
+                  />
+                </label>
+              </div>
+              <div className="drawer-side z-[9999]">
+                <label
+                  htmlFor="my-drawer-4"
+                  aria-label="close sidebar"
+                  className="drawer-overlay"
+                ></label>
+                <ul className="menu p-4 w-80 min-h-[85%] mt-[6.8%] bg-base-200 text-base-content">
+                  {/* Sidebar content here */}
+                  <p className="text-center font-semibold mb-3 text-secondary text-lg">
+                    Product List (3)
+                  </p>
+                  <li>
                     <ShopDetailsCard />
                     <ShopDetailsCard />
                     <ShopDetailsCard />
-                    </li>
-                    <li>
-                      <ProductPrice />
-                    </li>
-                  </ul>
-                </div>
+                  </li>
+                  <li>
+                    <ProductPrice />
+                  </li>
+                </ul>
+              </div>
             </li>
             {/* add to cart end */}
             <li>
@@ -290,7 +198,7 @@ const Navbar = () => {
                       </a>
                     </li>
 
-                    <li className="mt-1.5 bg-secondary text-brand rounded-md ">
+                    <li className="mt-1.5 bg-secondary text-brand rounded-md">
                       {!!isLogeIn ? (
                         <span>
                           {" "}
@@ -363,7 +271,7 @@ const Navbar = () => {
                     </div>
                   </div>
                   <nav>
-                    <ul className="space-y-4">{menuItems}</ul>
+                    <ul>{menuItems}</ul>
                   </nav>
                 </div>
               </div>

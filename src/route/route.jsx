@@ -19,13 +19,16 @@ import UserBooking from "../Dashboard/UserBooking";
 import UserFeedBack from "../Dashboard/UserFeedBack";
 import UserProfile from "../Dashboard/UserProfile";
 import HotNews from "../Pages/HotNews/HotNews";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
+import ReturnsPolicy from "../Pages/ReturnsPolicy/ReturnsPolicy";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
 import Checkout from "../Pages/Shop/Checkout";
 import Shop from "../Pages/Shop/Shop";
 import Team from "../Pages/Team/Team";
+import TermsConditions from "../Pages/TermsConditions/TermsConditions";
 
 export const router = createBrowserRouter([
   {
@@ -47,12 +50,24 @@ export const router = createBrowserRouter([
         element: <BlogRegular />,
       },
       {
-        path: "/blogDetails",
+        path: "/blogDetails/:id",
         element: <BlogDetails />,
       },
       {
         path: "/faq",
         element: <FAQ />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/return-policy",
+        element: <ReturnsPolicy />,
+      },
+      {
+        path: "/terms-conditions",
+        element: <TermsConditions />,
       },
       {
         path: "/checkout/history",
