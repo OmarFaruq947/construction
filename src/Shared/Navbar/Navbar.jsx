@@ -218,6 +218,7 @@ const Navbar = () => {
               </div>
             </li>
           </ul>
+          {/* toggle menu start */}
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -277,6 +278,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
+          {/* toggle menu  */}
         </div>
       </div>
     </div>

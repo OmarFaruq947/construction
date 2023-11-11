@@ -14,6 +14,7 @@ const Main = () => {
   return (
     <>
       <TinyNavbar />
+      {/* <DaysiNav /> */}
       <Navbar />
       <Outlet />
       <Footer />
