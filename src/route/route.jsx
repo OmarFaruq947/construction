@@ -22,7 +22,6 @@ import HotNews from "../Pages/HotNews/HotNews";
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
 import Registration from "../Pages/Registation/Registration";
-import ReturnsPolicy from "../Pages/ReturnsPolicy/ReturnsPolicy";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
 import Checkout from "../Pages/Shop/Checkout";
@@ -60,10 +59,6 @@ export const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
-      },
-      {
-        path: "/return-policy",
-        element: <ReturnsPolicy />,
       },
       {
         path: "/terms-conditions",
