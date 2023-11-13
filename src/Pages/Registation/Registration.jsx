@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import { z } from "zod";
 import logo from "../../assets/logo/colorLogo.png";
 const Registration = () => {
   const [isChecked, setIsChecked] = useState(false);
-console.log(isChecked);
+  console.log(isChecked);
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -87,7 +88,6 @@ console.log(isChecked);
                 onChange={handleInputChange}
                 placeholder="e-mail"
                 className="block w-full py-3 px-1 mt-2 
-                
               border-b-2 border-gray-100
               focus:text-gray-500 focus:outline-none focus:border-gray-200"
               />
@@ -159,9 +159,13 @@ console.log(isChecked);
                   checked={isChecked}
                   onChange={handleCheckboxChange}
                 />
-                <p className="italic text-[12px]">are you agree ? our Terms and Conditions</p>
+                <p className="italic text-[12px]">
+                  are you agree ? our Terms and Conditions
+                </p>
                 <span
-                  className={`${!isChecked ? 'text-secondary' : 'text-brand'} text-2xl -mt-1`}
+                  className={`${
+                    !isChecked ? "text-secondary" : "text-brand"
+                  } text-2xl -mt-1`}
                   data-tooltip-id="my-tooltip"
                   data-tooltip-delay-hide={500}
                 >
@@ -171,15 +175,20 @@ console.log(isChecked);
 
               <button
                 type="submit"
-                disabled={`${!isChecked ? 'disabled':'' }`}
+                disabled={`${!isChecked ? "disabled" : ""}`}
                 className="btn w-full py-3 mt-10 bg-brand
               font-medium text-white
               focus:outline-none hover:bg-secondary hover:shadow-none"
               >
                 Registration
               </button>
-             
             </form>
+            <Link
+              to="/login"
+              className="text-sm italic underline flex justify-start mx-auto hover:text-brand mt-3"
+            >
+              Already Registered ?
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
+import Dashboard from "../Dashboard/Dashboard";
+import DashboardDetails from "../Dashboard/DashboardDetails";
+import UserBooking from "../Dashboard/UserBooking";
+import UserFeedBack from "../Dashboard/UserFeedBack";
+import UserProfile from "../Dashboard/UserProfile";
 import Main from "../Layout/Main";
 import BlogDetails from "../Pages/Blog/BlogDetails";
 import BlogRegular from "../Pages/Blog/BlogRegular";
@@ -7,20 +12,15 @@ import Contact from "../Pages/Contact/Contact";
 import FAQ from "../Pages/Faq/FAQ";
 import History from "../Pages/History/History";
 import Home1 from "../Pages/Home/Home1";
+import HotNews from "../Pages/HotNews/HotNews";
 import Mission from "../Pages/MissionAndVision/Mission";
 import Vision from "../Pages/MissionAndVision/Vision";
 import NoMatch from "../Pages/NoMatch/NoMatch";
 import Payment from "../Pages/Payment/Payment";
 import Pricing from "../Pages/Pricing/Pricing";
-
-import Dashboard from "../Dashboard/Dashboard";
-import DashboardDetails from "../Dashboard/DashboardDetails";
-import UserBooking from "../Dashboard/UserBooking";
-import UserFeedBack from "../Dashboard/UserFeedBack";
-import UserProfile from "../Dashboard/UserProfile";
-import HotNews from "../Pages/HotNews/HotNews";
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ProjectDetails from "../Pages/Project/ProjectDetails";
+import Login from "../Pages/Registation/Login";
 import Registration from "../Pages/Registation/Registration";
 import ServiceMoreDetails from "../Pages/Services/ServiceMoreDetails";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
@@ -92,6 +92,10 @@ export const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
       {
         path: "/mission",
