@@ -1,9 +1,13 @@
 import React from "react";
+import { useGetUserInfoQuery } from "../redux/fetures/userInfo/userInfoApi";
 
 const DashboardDetails = () => {
-// const [searchTerm, setSearchTerm] = useState('')
-// const [debounceTerm, setDebounceTerm] = useState('')
-// console.log(debounceTerm);
+  const { data: userInformation, error, isLoading } = useGetUserInfoQuery(null);
+  // console.log("user info data",userInformation);  // for testing purpose
+  
+  // const [searchTerm, setSearchTerm] = useState('')
+  // const [debounceTerm, setDebounceTerm] = useState('')
+  // console.log(debounceTerm);
 
   // const handleSearch =(e)=>{
   //   e.preventDefault()
@@ -16,53 +20,33 @@ const DashboardDetails = () => {
   // });
 
   // if(!!debouncedTerm){
-  //   setDebounceTerm(debouncedTerm) 
+  //   setDebounceTerm(debouncedTerm)
   // }
 
-  const userInformation = [
+
+  const filedName = [
     {
-      pic: "https://i.ibb.co/vjgB5sn/image-23.png",
-      name: "bina",
-      email: "bina@gmail.com",
-      phone: "78965412302",
-      district: "nuakhaly",
+      id: 1,
+      rowName: "Image",
     },
     {
-      pic: "https://i.ibb.co/mB0XZnk/image-22.png",
-      name: "dukus",
-      email: "dukus@gmail.com",
-      phone: "78945612301",
-      district: "pabna",
+      id: 2,
+      rowName: "Name",
     },
     {
-      pic: "https://i.ibb.co/L9MYcxB/image-21.png",
-      name: "sorho",
-      email: "sorho@gmail.com",
-      phone: "12345678936",
-      district: "india",
+      id: 3,
+      rowName: "e-mail",
     },
     {
-      pic: "https://i.ibb.co/6JpXhQs/image-19.png",
-      name: "luypa",
-      email: "luypa@gmail.com",
-      phone: "78945123698",
-      district: "Mirpur",
+      id: 4,
+      rowName: "phone",
     },
     {
-      pic: "https://i.ibb.co/TBCd32R/jahanara-alam.png",
-      name: "hafij",
-      email: "hafij@gmail.com",
-      phone: "01254 456 789",
-      district: "borisal",
-    },
-    {
-      pic: "https://i.ibb.co/hFjP6S5/Screenshot-2020-12-14-114235.png",
-      name: "Omar Faruq",
-      email: "omar@gmail.com",
-      phone: "01752 456 789",
-      district: "Dhaka",
+      id: 5,
+      rowName: "District Name",
     },
   ];
+
   return (
     <>
       {/* search box start */}
@@ -72,7 +56,6 @@ const DashboardDetails = () => {
           class="w-full h-10 pl-10 pr-4 py-1 text-base placeholder-gray-500 border rounded-full "
           type="search"
           placeholder="Search"
-          
         />
       </div>
       {/* search box end */}
@@ -87,43 +70,29 @@ const DashboardDetails = () => {
         <table class="w-full table-auto text-sm">
           <thead>
             <tr class="text-sm text-left">
-              <th class="py-2 bg-grey-lightest font-bold uppercase text-sm text-grey-light border-b border-grey-light">
-                Profile pic
-              </th>
-              <th class="py-2 bg-grey-lightest font-bold uppercase text-sm text-grey-light border-b border-grey-light">
-                Name
-              </th>
-              <th class="py-2 bg-grey-lightest font-bold uppercase text-sm text-grey-light border-b border-grey-light">
-                e-Mail
-              </th>
-
-              <th class="py-2 bg-grey-lightest font-bold uppercase text-sm text-grey-light border-b border-grey-light">
-                Phone
-              </th>
-              <th class="py-2 bg-grey-lightest font-bold uppercase text-sm text-grey-light border-b border-grey-light">
-                District Name
-              </th>
+              {filedName?.map((filed) => (
+                <th
+                  class="py-2 bg-grey-lightest font-bold uppercase text-sm text-grey-light border-b border-grey-light"
+                  key={filed?.id}
+                >
+                  {filed?.rowName}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
             {userInformation?.map((user) => (
-              <tr class="hover:bg-grey-lighter">
+              <tr class="hover:bg-grey-lighter"  key={user?._id}>
                 <td class="py-1 px-4 border-b border-grey-light">
                   <img
-                    src={user?.pic}
+                    src={user?.profilepicture}
                     alt="..."
                     class="rounded-full h-10 w-10 "
                   />
                 </td>
-                <td class="py-1 border-b border-grey-light">
-                  {user?.name}
-                </td>
-                <td class="py-1 border-b border-grey-light">
-                  {user?.email}
-                </td>
-                <td class="py-1 border-b border-grey-light">
-                  {user?.phone}
-                </td>
+                <td class="py-1 border-b border-grey-light">{user?.name}</td>
+                <td class="py-1 border-b border-grey-light">{user?.email}</td>
+                <td class="py-1 border-b border-grey-light">{user?.phone}</td>
                 <td class="py-1 border-b border-grey-light">
                   {user?.district}
                 </td>

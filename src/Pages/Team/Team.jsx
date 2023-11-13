@@ -18,9 +18,12 @@ import AllDepartment from "./AllDepartment";
 import ExecutivePanelMember from "./ExecutivePanelMember";
 import TeamMembersProfileCard from "./TeamMembersProfileCard";
 
+import { useGetTeamMemberQuery } from "../../redux/fetures/teamMember/teamMemberApi";
 import "./TeamMemberProfileCard.css";
 
 const Team = () => {
+  const { data:operationalPanels , error, isLoading }= useGetTeamMemberQuery("OPERATION")
+
   const data = [
     {
       id: 1,
@@ -166,17 +169,10 @@ const Team = () => {
   };
   return (
     <>
-      {/* banner section start*/}
+   
       <AllComponentTopBanner bannerContent={bannerContent} />
-      {/* banner section end*/}
-
-      {/* exicutive panel */}
       <ExecutivePanelMember />
-
-      {/* exicutive panel end*/}
-
-      {/* Operation team member */}
-      <section className="bg-backgroundColor">
+      <div className="bg-backgroundColor">
         <div className="flex flex-col text-center w-full mb-20 pt-14">
           <h2 className="text-secondary font-bold text-4xl uppercase relative h-auto w-full pb-1 text-center ">
             Operation Team
@@ -190,21 +186,17 @@ const Team = () => {
           </p>
         </div>
         <div className="container px-6 py-10 mx-auto">
-          <div className="grid grid-cols-1 gap-4 mt-4 xl:mt-12 xl:gap-12 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 ">
-            {data.map((profileData) => (
+          <div className="grid grid-cols-1 gap-4  xl:mt-12 xl:gap-12 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 ">
+            {operationalPanels?.map((operationalMember) => (
               <TeamMembersProfileCard
-                key={profileData.id}
-                profileData={profileData}
+                key={operationalMember._id}
+                operationalMember={operationalMember}
               />
             ))}
           </div>
         </div>
-      </section>
-      {/* Operation team member end */}
-
-      {/* all Department */}
+      </div>
       <AllDepartment />
-      {/* all Department end*/}
     </>
   );
 };
