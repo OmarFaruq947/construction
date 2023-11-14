@@ -1,214 +1,307 @@
+<h1 align="center"> <img align='center' src="./src/assets/logo/colorLogo.png" width="230"> </h1>
+
+<h1 align="center">This is a Construction website</h1>
+<h4 align="center">Welcome to Wecons, where craftsmanship meets innovation in the world of construction. As a premier destination for building solutions, Wecons is committed to transforming your vision into reality. Explore our diverse range of services and discover how we seamlessly blend expertise and cutting-edge technology to construct spaces that stand the test of time.</h4>
+
+![Alt text](/src/assets/mockUp/wconsmockup.png)
+
+#✔Live Link:
+
+```
+
+```
+
+#✔Server Link:
+
+```
+
+```
+
+#✔Intro Video Link:
+
+```
+
+```
+
+#✔Client side Link:
+
+```
+https://github.com/OmarFaruq947/construction
+```
+
+#✔Server Repository Link:
+
+```
+
+```
+
 ## Assignment Requirements
 
 - **From the if applicable list, you must do minimum 10 among of them.**
 
-### User-Facing Features
+## ✅User-Facing Features
 
-### Homepage
-
-- Design a visually appealing and informative homepage that adapts seamlessly to different screen sizes.
+#### 👉Home page
 
 **Home page content:**
 
-- Navigation Menu --------(ok)
-- Search Bar -------------(ok)
-- Featured Content/Services -------(ok)
-- Testimonials/Reviews --------------(ok)
-- About Us/Platform Description ----(ok)
-- Images and Visuals -------(ok)
-- Detailed Footer menu -----(ok)
-- Two unique sections ------(ok)
+1. small contact Menu
+2. Navigation Menu
+3. Amazing Carousel
+4. About Us (Mission & Vision page included)
+5. Services
+6. Achievement
+7. Innovation Goal section
+8. Testimonials/Reviews
+9. Subscribe section
+10. Repeated Clients Auto Carousel
+11. Detailed Footer menu
 
-I**nteractivity (minimum 2 section):**
+**Overall features for Wecons:**
 
-1. Smooth Scrolling ------(ok)
-2. Testimonials/Reviews Carousel -----(ok)
-3. Scroll-to-Top Button ------ (ok)
-4. Loading Spinner ----------(ok)
+1. Smooth Scrolling
+2. Scroll-to-Top Button
+3. Loading Spinner
+4. Multi device supported (Responsive Design)
+5. Toast Message handling
+6. High Quality Image source is Freepik
+7. used custom scrollbar
 
-5. About Us/Platform Description Reveal ( On mouse hover or click show animated card or detailed view)
+#### 👉Blog Page
 
-### Content or Service Listings
+**Blog page content:**
 
-- Create a dedicated page where users can explore content or services with a focus on responsive design. Implement filters and sorting options that work well on both large screens and mobile devices. ----(ok)
+1. Blog post section for admin & super admin
+2. Blog Show dynamically
+3. Blog Shorting Features
+4. Trending Blog Show
+5. Like, Reply, Share option added
 
-**Content or Service listing page:**
+**Blog Details page:**
 
-- Filter and Sorting Options ---- (not necessary)
-- Search Bar ---- (not necessary)
-- Pagination (frontend pagination) ---- (not necessary)
-- Quick Actions ---- (not necessary)
-- Availability Status ( if applicable) ---- (not necessary)
-- Sorting and Filtering Sidebar ---- (not necessary)
-- Advanced Filters (optional) ---- (not necessary)
-- User-generated Content ---- (not necessary)
-- Search Results Summary ---- (not necessary)
+1.  Banner
+2.  Blog Title
+3.  Blog Content
+4.  blog Comments
+5.  Search Options
+6.  Latest Post
+7.  Related Categories and Tags
 
-- Service Details Link ------(ok)
-- Rating and Reviews --------(ok)
-- Service Cards ----- (ok)
-- Breadcrumb Navigation ----- (pending)
-- Service Tags ------ (ok)
-- Pricing Information --------(ok)
+#### 👉Hot News Page
 
-### Detail Pages
+dynamically hot news/trending news show and search bar added.
 
-- Develop detailed pages for the content or services that present information, pricing (if applicable), and user reviews in a responsive manner. Ensure that images and content adjust appropriately to various screen sizes.
+#### 👉Team Page
 
-**Detail page:**
+**Team page content:**
+total Three sections of Team Page
 
-- Title ---------(ok)
-- Description -----(ok)
-- Images or Gallery ()
-- Pricing (if applicable) ----(ok)
-- Location or Address (if relevant) ----()
-- Contact Information (if applicable) ----()
-- Ratings(if applicable) -----(ok)
-- Booking or Reservation Options------(ok)
+1. Executive Panel Members with contact information included
+2. Operational Panel Members with contact information included
+3. Company Department section
 
-- Availability Information (if applicable)
-- Related Content/Services
-- Share Buttons
-- Call-to-Action Buttons
-- Additional Details
-- User-generated Content
+#### 👉Project Page
 
-### Interaction and Booking (if applicable)
+**Project page content:**
 
-- Implement responsive interaction features related to the specific content or services offered on the platform. This could include booking, reservations, purchasing, or any other relevant interactions.
+1. Total completed Building with Square Feet
+2. Project completed & Ongoing Project Tab
 
-**Interaction Page:**
+#### 👉Service Listings Page
 
-- Booking Form ----(ok)
-- User Details and Contact Information----(ok)
-  -name, email, phone, altPhone, present_address, WorkingSite_address, NID_number, Additional Information
-- Cancellation Policy-----(ok)
+**Service listing page:**
 
-- Review and Edit Booking (if needed)
-- Date and Time Selection (if applicable)
-- Availability Calendar (if applicable)
-- Pricing Information (if applicable)
-- Booking Confirmation (if applicable)
-- Payment Options (if applicable)
-- Add to Cart or Reserve Now Button
-- Availability Status (if applicable)
-- Additional Options
+1. Service Cards
+2. Show The All Services & added Rating
 
-### User Registration and Login
+   1. Automobile Manufacturing
+   2. Mechanical Engineering
+   3. Fast Transportation
+   4. Constant Maintenance
+   5. Accurate Measurements. etc.
 
-- Design registration and login forms that are user-friendly and work smoothly on mobile devices. Ensure that error messages and validation are clear on smaller screens. -----(ok)
+3. Service Details Link
+4. Rating and Reviews
+5. Service Tags
+6. Pricing Information
+
+**Service Detail page:**
+
+1. Title
+2. Description
+3. Images
+4. Pricing option
+5. Booking option
+6. Ratings
+
+#### 👉Booking Page
+
+**Booking Page:**
+Booking page has a two section
+
+1. booking Form
+2. Booking cancellation policy
+
+#### 👉Pricing Page
+
+three Package are Available for construction website
+
+#### 👉Contact Page
+
+two section are available of Contact page
+
+1. contact form
+2. Location Map
+
+#### 👉Others Page
+
+1. Privacy Policy
+2. Terms & Conditions
+3. FAQ page
+
+#### 👉User Registration and Login
+
+Well & eyes Comfortable Registration and Login page design.
 
 **User Registration & Login page:**
 
-- Registration Form -----(ok)
-- Login Form ------(ok)
-- Username or Email Field ---(ok)
-- Password Field ----(ok)
-- Sign-Up Button ---(ok)
-- Sign-In Button ---(ok)
-- Privacy Policy Link(ok )
-- Error Messages for Validation(ok)
-- Terms and Conditions Checkbox(ok)
+1. Registration Form
+2. Login Form
+3. Username or Email Field
+4. Password Field
+5. Sign-Up Button
+6. Sign-In Button
+7. Privacy Policy Link tooltip
+8. Error Messages for Validation
+9. Terms and Conditions Checkbox
+10. Social Media Login Options
 
-- User Profile Picture (if applicable) ---(ok)
-- Social Media Login Options (if applicable) ----()
-- Redirect to User Profile (after login) -----()
+#### 👉Cart Sidebar
 
-### User Profile
+Has a three layer of Cart sidebar.
 
-- Create responsive user profiles that allow users to manage personal information, contact details, history (e.g., purchase history or content interactions), and user-generated content (if applicable). ---(ok)
+⚡ first layer: Product list, Product total cost (with vat) and confirm Order button.
 
-**User Profile page:**
+⚡ Second layer: Second Layer is a shipping & Payment section, which name is "checkout" page
+Press confirm order button to go to second layer(checkout page).
 
-- User Profile Picture (if applicable) ----(ok)
-- User Information ----(ok)
-- Profile Settings ----(ok)
-- Purchase or Booking or Content or Service Interactions History ----(ok)
-- Payment Methods (only UI)
-- Edit Profile Button ----(ok)
-- Logout Button ----(ok)
+checkout page has three section
+
+1. get the shipping information
+   1. validation and checkmark are available
+   2. Order confirm button dependent on the payment option
+2. payment section
+   1. Payment option dependent on the shipping information.
+   2. Download invoice button will be enable after payment is completed.
+3. product replacement policy
+
+⚡ third layer: third layer is download invoice page. invoice page is contained payment related all information of any products. invoice page printing option is available.
+
+## ✅Dashboard Features
+
+dashboard can access only admin & super admin. the dashboard includes the following options.
+
+1. Dashboard
+2. Profile
+3. Booking information
+4. Feedback
+
+#### 👉dashboard
+
+you can see in the dashboard all registered user list. and you well get user information. searching option available for you.
+
+1. Overview of User's Activities
+2. Booking History
+3. Current Booking Status
+4. User Profile Summary
+5. Edit Profile Button
+6. Quick Actions
+
+#### 👉Profile
+
+profile option can access resister user & and edit given information. the profile includes the following options.
+
+1. User Profile Picture
+2. User Information
+3. Profile Settings
+4. Purchase or Booking or Content or Service Interactions History
+5. Edit Profile Button
+6. Logout Button
+
+#### 👉Booking Information
+
+Booking information can access only admin & super admin. admin can see client information and also see the payment status, edit, delete etc.
+
+#### 👉Feedback
+
+feedback option can access admin, super admin and register clients. and posted self feedback. the feedback includes the following terms.
+
+1. Feedback Form
+2. Fields for User's Name and Email
+3. Rating Scale
+4. Comments or Suggestions Box
+5. Submit Button
+6. Clear Form Button
+7. Thank You Message
 
 ### Notifications (Optional)
 
 - If you choose to include this feature, create a responsive notifications center that delivers messages and updates effectively on various devices.
 
-### Feedback Forms
+## ✅Installation process
 
-- Design feedback forms that adapt to different screen sizes, making it convenient for users to provide comments and suggestions regardless of their device. ----(ok)
-
-**Feedback Page:**
-
-- Feedback Form ----(ok)
-- Fields for User's Name and Email ----(ok)
-- Rating Scale
-- Comments or Suggestions Box ----(ok)
-- Submit Button ----(ok)
-- Clear Form Button
-- Thank You Message ----(ok)
-
-### Dashboard for Users
-
-### User Dashboard
-
-- Create a responsive dashboard that provides users with an overview of their interactions, bookings (if applicable), notifications, and user-related statistics. Ensure that the dashboard elements adapt well to various screen sizes.
-
-**User Dashboard page:**
-
-- Overview of User's Activities -----(ok)
-- Booking History -----(ok)
-- Current Booking Status -----(ok)
-- User Profile Summary
-- Edit Profile Button -----(ok)
-- Notifications Center
-- Quick Actions
-
-### Dashboard for Admins
-
-### Admin Dashboard
-
-- Develop a responsive admin dashboard that allows administrators to monitor and manage website activities. Provide features for user management, service management, booking management, content management, and profile management.
-
-**Admin dashboard page:**
-
-- Overview of Platform Activities and Statistics
-- User Management Section
-- Content or Service Management Section
-- Booking , Content Management Section ( make any part of the webpage dynamically )
-- User profile summary -----(ok)
-- Notifications Center(optional)
-- Quick Links to Common Actions
-
-### Enhancements for User Experience and Responsive Design (Bonus)
-
-- Bonus marks for enhancing the user experience, with a specific focus on responsive design. Prioritize making the platform accessible and user-friendly on desktop, tablet, and mobile devices. Consider factors such as touch-friendly elements, adaptive layouts, and efficient use of screen real estate.
-
-### Technical Requirements
-
-1. Utilize appropriate technologies for frontend development to ensure efficient server-side rendering and enhanced SEO capabilities (if applicable).
-2. Implement robust data validation and error handling mechanisms on the responsive frontend.
-3. Thoroughly test and debug the responsive design across various devices and screen sizes to ensure consistency.
-
-## Additional Notes
-
-- The assignment is adaptable to various types of content or services, making it suitable for a wide range of platforms.
-- Responsive design is a critical aspect of this assignment. Ensure that the platform offers a consistent and user-friendly experience across different devices.
-- You can choose any suitable authentication platform (e.g., NextAuth.js , Passport.js, Firebase) for implementing user registration and login.
-- Ensure that all functionalities work perfectly, whether you create your own data, set up a simple server, or use dummy data.
-
-## Assignment Submission
-
-Your final submission should include the following:
-
-1. Source code (provide a GitHub Repository link for the responsive frontend developed).
-2. A live site link that allows reviewers to interact with the responsive frontend of the dynamic platform on both desktop and mobile devices.
-3. A recorded video (2-5 minutes) showcasing the key features and functionalities of your responsive frontend developed. ( any screen video recorder application or chrome extension.
-
-[Chrome Web Store](https://chromewebstore.google.com/search/screen%20recorder) or https://chromewebstore.google.com/detail/loom-%E2%80%93-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb )
-
-[ Note: Must submit your complete website. Incomplete assignments will not be accepted. ]
+👉 go to the terminal and following process step-by-step
 
 ```
-Link
+git clone https://github.com/OmarFaruq947/construction.git
 ```
 
-![Alt text](home.png)
+```
+cd construction
+```
+
+```
+npm i
+```
+
+finally...
+
+```
+npm run dev
+```
+
+Done, now you can enjoy wecons website & wait for up cumming exciting Features 💖💖
+
+## ✅Using Technology
+
+#### 👉 React js
+
+#### 👉 RTK Query
+
+#### 👉 Tailwind css
+
+#### 👉 JSON server
+
+#### 👉 zod validation
+
+## ✅Up-cumming Features
+
+### ⚡Front-end
+
+1. Global searching
+2. advance validations
+3. More productive dashboard
+4. solve the responsive issue( specially navbar)
+5. Pagination add
+6. Authentication add
+7. add the lazy Loading
+8. Breadcrumb Navigation
+9. and solve the every issues in day by day
+
+### ⚡ Back-end
+
+1. Add the database mongodb
+2. API create with Swagger
+3. Notification system on using Socket.IO
+4. payment option enable using Stripe
+5. and solve the every backend related issues in day by day
