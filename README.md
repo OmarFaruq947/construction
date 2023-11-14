@@ -5,39 +5,39 @@
 
 ![Alt text](/src/assets/mockUp/wconsmockup.png)
 
-#✔Live Link:
+# ✔Live Link:
 
 ```
 
 ```
 
-#✔Server Link:
+# ✔Server Link:
 
 ```
 
 ```
 
-#✔Intro Video Link:
+# ✔Intro Video Link:
 
 ```
 
 ```
 
-#✔Client side Link:
+# ✔Client side Link:
 
 ```
 https://github.com/OmarFaruq947/construction
 ```
 
-#✔Server Repository Link:
+# ✔Server Repository Link:
 
 ```
 
 ```
 
-## Assignment Requirements
+## ✅ Motivation
 
-- **From the if applicable list, you must do minimum 10 among of them.**
+<p>Creating a construction website serves as a pivotal step in fostering a strong online presence for our construction business. In an increasingly digital age, a dedicated website not only showcases our portfolio, services, and expertise but also enhances accessibility for potential clients and partners. By establishing an online platform, we aim to streamline communication, demonstrate our commitment to transparency, and ultimately contribute to the growth and success of our construction enterprise in the modern market landscape.</p>
 
 ## ✅User-Facing Features
 
@@ -305,3 +305,35 @@ Done, now you can enjoy wecons website & wait for up cumming exciting Features �
 3. Notification system on using Socket.IO
 4. payment option enable using Stripe
 5. and solve the every backend related issues in day by day
+
+---
+
+### Connect with me:
+
+#### ✔ Portfolio
+
+```
+https://omarfaruqmebd.netlify.app/
+```
+
+#### ✔ LinkedIn
+
+```
+https://www.linkedin.com/in/md-omar-faruq-7458b819a/
+```
+
+#### ✔ Github
+
+```
+https://github.com/OmarFaruq947
+```
+
+#### ✔ Email
+
+```
+omarfaruq.bauet.bd@gmail.com
+```
+
+---
+
+<h1 align='center'>💖Thank you Watching my Project 💖</h1>
