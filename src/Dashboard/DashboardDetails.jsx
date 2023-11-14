@@ -94,7 +94,7 @@ const DashboardDetails = () => {
                 <td class="py-1 border-b border-grey-light">{user?.email}</td>
                 <td class="py-1 border-b border-grey-light">{user?.phone}</td>
                 <td class="py-1 border-b border-grey-light">
-                  {user?.district}
+                  {user?.districTName}
                 </td>
               </tr>
             ))}
