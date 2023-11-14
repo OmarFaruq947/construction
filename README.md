@@ -254,7 +254,7 @@ feedback option can access admin, super admin and register clients. and posted s
 👉 go to the terminal and following process step-by-step
 
 ```
-git clone https://github.com/OmarFaruq947/construction.git
+git clone
 ```
 
 ```
