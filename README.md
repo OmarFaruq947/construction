@@ -8,7 +8,7 @@
 # ✔Live Link:
 
 ```
-
+https://amazing-baklava-94ad65.netlify.app/
 ```
 
 # ✔Server Link:
