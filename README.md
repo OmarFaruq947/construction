@@ -18,7 +18,7 @@ https://wecons-server.onrender.com/api/userInformation
 
 ```
 
-# ✔Client side Repository Link:
+# ✔Client Repository Link:
 
 ```
 https://github.com/OmarFaruq947/construction
