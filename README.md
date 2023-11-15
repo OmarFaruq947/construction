@@ -18,12 +18,6 @@ https://wecons-server.onrender.com/api/userInformation
 
 ```
 
-# ✔Intro Video Link:
-
-```
-
-```
-
 # ✔Client side Repository Link:
 
 ```
