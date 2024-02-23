@@ -8,7 +8,7 @@
 # ✔Live Link:
 
 ```
-
+https://amazing-baklava-94ad65.netlify.app/
 ```
 
 # ✔Server Link:
@@ -18,13 +18,7 @@ https://wecons-server.onrender.com/api/userInformation
 
 ```
 
-# ✔Intro Video Link:
-
-```
-
-```
-
-# ✔Client side Repository Link:
+# ✔Client Repository Link:
 
 ```
 https://github.com/OmarFaruq947/construction
